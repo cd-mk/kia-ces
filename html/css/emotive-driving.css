@@ -210,19 +210,25 @@
 }
 .ces_2019_films .films-slide .slider-for .slick-arrow {
   position: absolute;
-  right: 0;
   bottom: -60px;
   width: 22px;
   height: 40px;
   background: url(../images/arr-slide.png) no-repeat;
-  background-size: auto 40px;
   text-indent: -9999px;
 }
 .ces_2019_films .films-slide .slider-for .slick-arrow.slick-prev {
+  right: 62px;
   background-position: 0 -40px;
 }
+.ces_2019_films .films-slide .slider-for .slick-arrow.slick-prev.slick-disabled {
+  background-position: 0 0;
+}
 .ces_2019_films .films-slide .slider-for .slick-arrow.slick-next {
-  background-position: 22px -40px;
+  right: 0;
+  background-position: -22px -40px;
+}
+.ces_2019_films .films-slide .slider-for .slick-arrow.slick-next.slick-disabled {
+  background-position: -22px 0;
 }
 .ces_2019_films .films-slide .nav-title {
   display: block;
@@ -234,7 +240,7 @@
   text-align: center;
 }
 .ces_2019_films .films-slide .slider-nav {
-  margin-top: 58px;
+  margin-top: 40px;
 }
 .ces_2019_films .films-slide .slider-nav:after {
   content: '';
@@ -271,7 +277,7 @@
   border: 4px solid #bb162b;
   box-sizing: border-box;
 }
-.ces_2019_films .films-slide .slider-nav > li.is-active .thumb-title {
+.ces_2019_films .films-slide .slider-nav .slick-slide.is-active .thumb-title {
   color: #bb162b;
 }
 

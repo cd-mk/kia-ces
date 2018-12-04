@@ -1055,7 +1055,9 @@
 
 								$('.slider-nav')
 									.on('init', function(event, slick) {
+										var title = $('.slider-nav .slick-slide.slick-current').find('.thumb-title').text(); 
 										$('.slider-nav .slick-slide.slick-current').addClass('is-active');
+										$('.nav-title').text(title);
 									})
 									.slick({
 										slidesToShow: 5,
@@ -1068,8 +1070,10 @@
 								$('.slider-for').on('afterChange', function(event, slick, currentSlide) {
 									$('.slider-nav').slick('slickGoTo', currentSlide);
 									var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+									var title = $(currrentNavSlideElem).find('.thumb-title').text();
 									$('.slider-nav .slick-slide.is-active').removeClass('is-active');
 									$(currrentNavSlideElem).addClass('is-active');
+									$('.nav-title').text(title);
 								});
 
 								$('.slider-nav').on('click', '.slick-slide', function(event) {
