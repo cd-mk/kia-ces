@@ -745,11 +745,14 @@
 
 						<!-- S: CES_2019_media 컴포넌트 -->
 						<div class="ces_2019_media section ces-onScreen">
-							<div class="img-wrap">
+							<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
 								<img src="./images/@sample-video-img.jpg" alt="">
 								<a href="#url" class="btn-play">Play</a>
 							</div>
-							<iframe src="https://www.youtube.com/embed/BirCjiLYPpY" frameborder="0"></iframe>
+							<iframe src="" frameborder="0"></iframe>
+							<script>
+								$('.btn-play').on('click', mediaPlay);
+							</script>
 						</div>
 						<!-- E: CES_2019_media 컴포넌트 -->
 
@@ -800,11 +803,14 @@
 
 						<!-- S: CES_2019_media 컴포넌트 -->
 						<div class="ces_2019_media section ces-onScreen">
-							<div class="img-wrap">
+							<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
 								<img src="./images/@sample-video-img2.jpg" alt="">
 								<a href="#url" class="btn-play">Play</a>
 							</div>
-							<iframe src="https://www.youtube.com/embed/BirCjiLYPpY" frameborder="0"></iframe>
+							<iframe src="" frameborder="0"></iframe>
+							<script>
+								$('.btn-play').on('click', mediaPlay);
+							</script>
 						</div>
 						<!-- E: CES_2019_media 컴포넌트 --> 
 
@@ -900,11 +906,14 @@
 
 						<!-- S: CES_2019_media 컴포넌트 -->
 						<div class="ces_2019_media section ces-onScreen">
-							<div class="img-wrap">
+							<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
 								<img src="./images/@sample-video-img3.jpg" alt="">
 								<a href="#url" class="btn-play">Play</a>
 							</div>
-							<iframe src="https://www.youtube.com/embed/BirCjiLYPpY" frameborder="0"></iframe>
+							<iframe src="" frameborder="0"></iframe>
+							<script>
+								$('.btn-play').on('click', mediaPlay);
+							</script>
 						</div>
 						<!-- E: CES_2019_media 컴포넌트 -->
 
@@ -980,19 +989,39 @@
 							<div class="films-slide">
 								<div class="slider-for">
 									<div>
-										<img src="./images/@sample-slide-for1.jpg" alt="" srcset="">
+										<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+											<img src="./images/@sample-slide-for1.jpg" alt="">
+											<a href="#url" class="btn-play">Play</a>
+										</div>
+										<iframe src="" frameborder="0"></iframe>
 									</div>
 									<div>
-										2
+										<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+											<img src="./images/@sample-video-img.jpg" alt="">
+											<a href="#url" class="btn-play">Play</a>
+										</div>
+										<iframe src="" frameborder="0"></iframe>
 									</div>
 									<div>
-										3
+										<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+											<img src="./images/@sample-video-img2.jpg" alt="">
+											<a href="#url" class="btn-play">Play</a>
+										</div>
+										<iframe src="" frameborder="0"></iframe>
 									</div>
 									<div>
-										4
+										<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+											<img src="./images/@sample-video-img3.jpg" alt="">
+											<a href="#url" class="btn-play">Play</a>
+										</div>
+										<iframe src="" frameborder="0"></iframe>
 									</div>
 									<div>
-										5
+										<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+											<img src="./images/@sample-video-img.jpg" alt="">
+											<a href="#url" class="btn-play">Play</a>
+										</div>
+										<iframe src="" frameborder="0"></iframe>
 									</div>
 								</div>
 								<span class="nav-title"></span>
@@ -1073,6 +1102,9 @@
 									var title = $(currrentNavSlideElem).find('.thumb-title').text();
 									$('.slider-nav .slick-slide.is-active').removeClass('is-active');
 									$(currrentNavSlideElem).addClass('is-active');
+
+									$('.slider-for .img-wrap').removeClass('video-play');
+									$('.slider-for iframe').attr('src', '');
 									$('.nav-title').text(title);
 								});
 
@@ -1083,6 +1115,7 @@
 									$('.slider-for').slick('slickGoTo', goToSingleSlide);
 								});
 							});
+							$('.btn-play').on('click', mediaPlay);
 						</script>
 						<!-- E: CES_2019_films 컴포넌트 -->
 					</div>
