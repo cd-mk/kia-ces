@@ -89,6 +89,9 @@
   height: 100%;
   z-index: 10;
 }
+.ces_2019_media .img-wrap.video-play {
+  display: none;
+}
 .ces_2019_media .img-wrap img {
   position: absolute;
   left: 0;
@@ -112,6 +115,7 @@
   top: 0;
   width: 100%;
   height: 100%;
+  background: #000;
 }
 
 /* CES_2019_space 컴포넌트 */
@@ -207,6 +211,38 @@
 .ces_2019_films .films-slide .slider-for {
   position: relative;
   height: 540px;
+}
+.ces_2019_films .films-slide .slider-for .slick-slide {
+  position: relative;
+}
+.ces_2019_films .films-slide .slider-for .img-wrap {
+  position: relative;
+  z-index: 10;
+}
+.ces_2019_films .films-slide .slider-for .img-wrap img {
+  width: 100%;
+}
+.ces_2019_films .films-slide .slider-for .img-wrap.video-play {
+  z-index: 1;
+}
+.ces_2019_films .films-slide .slider-for .img-wrap .btn-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  background: url(../images/btn-play.png) no-repeat 0 0;
+  transform: translate(-50%, -50%);
+  text-indent: -9999px;
+}
+.ces_2019_films .films-slide .slider-for iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 5;
 }
 .ces_2019_films .films-slide .slider-for .slick-arrow {
   position: absolute;
