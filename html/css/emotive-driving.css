@@ -14,6 +14,7 @@
   padding:0 3%;
   text-align: center;
   color: #000;
+  overflow: hidden;
 }
 .ces_2019_text.text-white {
   color: #fff;
@@ -42,7 +43,7 @@
 
   position: relative;
   opacity: 0;
-  bottom: 170px;
+  bottom: 120px;
   transition: all .5s ease-in-out;
   transition-delay: .2s;
 }
@@ -60,7 +61,7 @@
 
   position: relative;
   opacity: 0;
-  bottom: 170px;
+  bottom: 50px;
   transition: all .5s ease-in-out;
   transition-delay: .4s;
 }
@@ -76,7 +77,7 @@
 
   position: relative;
   opacity: 0;
-  bottom: 170px;
+  bottom: 50px;
   transition: all .5s ease-in-out;
   transition-delay: .6s;
 }
