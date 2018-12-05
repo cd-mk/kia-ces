@@ -67,7 +67,7 @@
 }
 .ces_2019_text .ces_description {
   position: relative;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 60px;
   font-size: 18px;
   line-height: 1.7;
@@ -88,9 +88,11 @@
   padding-top: 54px;
 }
 .ces_2019_text .ces_description .animate-line {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
-  top: 0;
+  top: 0; */
+  display: block;
+  margin:0 auto 50px;
   width: 0;
   height: 4px;
   background: #bb162b;
@@ -469,7 +471,9 @@
   }
   .ces_2019_text .ces_description .animate-line {
     height: 2px;
+    margin: 0 auto 20px;
   }
+
   .ces_2019_text .ces_title {
     font-size: 28px;
     padding: 10px 0;
@@ -517,7 +521,7 @@
   .ces_2019_media {
     position: relative;
     max-width: 100%;
-    height: 170px;
+    height: auto;
     margin: 0 auto;
     -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
