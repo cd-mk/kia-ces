@@ -7,7 +7,7 @@ var cesMediaPlay = function() {
 
 var cesScrollEffect = function() {
   var winH = $(window).outerHeight();
-  
+
   $('.ces-onScreen').each(function() {
     var isFirst = $(this).eq(0).offset().top < winH;
 
@@ -86,6 +86,8 @@ $(document).ready(function() {
   if ($('.ces_2019_films').length) {
     cesSlideInit();
   }
-  $('.ces_2019_media .btn-play').on('click', cesMediaPlay);
+  $('.ces_2019_media .btn-play').each(function() {
+    $(this).on('click', cesMediaPlay);
+  });
   $('.ces_2019_films .btn-play').on('click', cesMediaPlay);
 });
