@@ -191,7 +191,7 @@
   top: 50%;
   width: 80px;
   height: 80px;
-  background: url(../images/btn-play.png) no-repeat 0 0;
+  background: url(../images/btn-ces-play.svg) no-repeat 0 0;
   text-indent: -9999px;
   transform: translate(-50%, -50%);
 }
@@ -360,7 +360,7 @@
   top: 50%;
   width: 80px;
   height: 80px;
-  background: url(../images/btn-play.png) no-repeat 0 0;
+  background: url(../images/btn-ces-play.png) no-repeat 0 0;
   transform: translate(-50%, -50%);
   text-indent: -9999px;
 }
@@ -457,7 +457,6 @@
 
 .txt_pc {display:block}
 .txt_mo {display:none}
-
 
 
 @media(max-width:768px){
