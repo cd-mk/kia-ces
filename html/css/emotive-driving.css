@@ -5,14 +5,16 @@
   position: relative;
 }
 .layout-background picture {
+  overflow: hidden;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
 }
 .layout-background img {
-  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* CES_2019_text 컴포넌트 */

@@ -1,3 +1,12 @@
+var layoutHeight = function() {
+  $('.layout-background').each(function() {
+    var imgHeight = $(this).find('img').outerHeight();
+
+    $(this).find('picture').height(imgHeight);
+  });
+}
+
+
 var cesMediaPlay = function() {
   var iframeSrc = $(this).closest('.img-wrap').data('src');
 
@@ -80,6 +89,9 @@ var cesSlideInit = function() {
 }
 
 $(document).ready(function() {
+  if ($('.layout-background').length) {
+    layoutHeight();
+  }
   if ($('.ces-onScreen').length) {
     cesScrollEffect();
   }
