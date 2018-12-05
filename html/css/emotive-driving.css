@@ -99,7 +99,7 @@
   width: 0;
   height: 4px;
   display:block;
-  margin:0 auto 50px;
+  margin:0 0 50px 0;
   background: #bb162b;
   opacity: 0;
   transition: width .4s ease-in-out;
