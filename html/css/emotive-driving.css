@@ -24,17 +24,33 @@
 .ces_2019_text.right {
   text-align: right;
 }
+.ces_2019_text .ces_summary {
+  display: inline-block;
+  margin-bottom: 22px;
+  font-size: 22px;
+
+  position: relative;
+  opacity: 0;
+  bottom: 170px;
+  transition: all .5s ease-in-out;
+}
 .ces_2019_text .ces_title {
   font-family: "kiaB";
   font-size: 74px;
   line-height: 1;
+  padding:20px 0;
 
   position: relative;
-  bottom: 170px;
   opacity: 0;
-  transition: all .8s ease-in-out;
-  transition-delay: .1s;
-  padding:20px 0;
+  bottom: 170px;
+  transition: all .5s ease-in-out;
+  transition-delay: .2s;
+}
+.ces_2019_space.is-line + .ces_2019_text .ces_title {
+  transition-delay: .6s;
+}
+.ces_2019_text .ces_summary + .ces_title {
+  transition-delay: .2s !important;
 }
 .ces_2019_text .ces_sub-title {
   margin-top: 20px;
@@ -43,10 +59,10 @@
   line-height: 1.2;
 
   position: relative;
-  bottom: 170px;
   opacity: 0;
-  transition: all .8s ease-in-out;
-  transition-delay: .2s;
+  bottom: 170px;
+  transition: all .5s ease-in-out;
+  transition-delay: .4s;
 }
 .ces_2019_text .ces_description {
   position: relative;
@@ -59,10 +75,10 @@
   margin-top: 40px;
 
   position: relative;
-  bottom: 170px;
   opacity: 0;
-  transition: all .8s ease-in-out;
-  transition-delay: .8s;
+  bottom: 170px;
+  transition: all .5s ease-in-out;
+  transition-delay: .6s;
 }
 .ces_2019_text .ces_description > p:nth-of-type(1) {
   margin-top: 0;
@@ -79,18 +95,7 @@
   background: #bb162b;
   opacity: 0;
   transition: width 1s ease-in-out;
-  transition-delay: .6s;
-}
-.ces_2019_text .ces_summary {
-  display: inline-block;
-  margin-bottom: 22px;
-  font-size: 22px;
-
-  position: relative;
-  bottom: 170px;
-  opacity: 0;
-  transition: all .5s ease-in-out;
-  transition-delay: .2s;
+  transition-delay: .3s;
 }
 .ces_2019_text.js-animated .ces_title,
 .ces_2019_text.js-animated .ces_sub-title,
@@ -132,9 +137,6 @@
 
 
 /* CES_2019_media 컴포넌트 */
-.ces_2019_text + .ces_2019_media {
-  transition-delay: 1s;
-}
 .ces_2019_media {
   position: relative;
   max-width: 940px;
@@ -144,11 +146,12 @@
   -moz-box-shadow: 0px 35px 35px 0px rgba(0,0,0,0.35);
   box-shadow: 0px 35px 35px 0px rgba(0,0,0,0.35);
 
-  bottom: 170px;
+  position: relative;
   opacity: 0;
+  bottom: 170px;
   transition: all .5s ease-in-out;
-  transition-delay: .5s;
 }
+
 .ces_2019_media.js-animated {
   bottom: 0;
   opacity: 1;
@@ -207,23 +210,32 @@
   height:100%;
   display: inline-block;
 }
+.ces_2019_space.is-line {
+  opacity: 0;
+}
+.ces_2019_space.is-line.js-animated {
+  opacity: 1;
+  animation-name: lineHeight;
+  animation-duration: .5s;
+}
+.ces_2019_text + .ces_2019_space.is-line.js-animated {
+  /* transition-delay: .4s; */
+}
+
+@keyframes lineHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 140px;
+  }
+}
 
 
 /* CES_2019_Details 컴포넌트 */
 .ces_2019_details {
   margin-top: 40px;
   margin-bottom: 60px;
-
-  position: relative;
-  opacity: 0;
-  bottom: 170px;
-  transition: all .5s ease-in-out;
-  transition-delay: .8s;
-}
-.ces_2019_details.js-animated {
-  opacity: 1;
-  bottom: 0;
-  
 }
 .ces_2019_details .details-list {
   width: 940px;
@@ -238,6 +250,23 @@
   position: relative;
   float: left;
   width: 455px;
+
+  opacity: 0;
+  bottom: 170px;
+  transition: all .5s ease-in-out;
+}
+.ces_2019_details.js-animated .details-list > li {
+  opacity: 1;
+  bottom: 0;
+}
+.ces_2019_details.js-animated .details-list > li:nth-child(2) {
+  transition-delay: .2s;
+}
+.ces_2019_details.js-animated .details-list > li:nth-child(3) {
+  transition-delay: .4s;
+}
+.ces_2019_details.js-animated .details-list > li:last-child {
+  transition-delay: .6s;
 }
 .ces_2019_details .details-list > li:nth-child(even) {
   margin-left: 30px;
