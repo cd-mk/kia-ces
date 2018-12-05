@@ -47,9 +47,6 @@
   transition: all .5s ease-in-out;
   transition-delay: .2s;
 }
-.ces_2019_space.is-line + .ces_2019_text .ces_title {
-  transition-delay: .6s;
-}
 .ces_2019_text .ces_summary + .ces_title {
   transition-delay: .2s !important;
 }
@@ -90,13 +87,14 @@
 .ces_2019_text .ces_description .animate-line {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -35px;
   width: 0;
   height: 4px;
   background: #bb162b;
   opacity: 0;
-  transition: width 1s ease-in-out;
-  transition-delay: .3s;
+  transition: width .4s ease-in-out;
+  transition-delay: .5s;
+  transform: translateX(-50%);
 }
 .ces_2019_text.js-animated .ces_title,
 .ces_2019_text.js-animated .ces_sub-title,
@@ -149,10 +147,10 @@
 
   position: relative;
   opacity: 0;
-  bottom: 170px;
+  bottom: 120px;
   transition: all .5s ease-in-out;
+  transition-delay: .8s;
 }
-
 .ces_2019_media.js-animated {
   bottom: 0;
   opacity: 1;
@@ -211,27 +209,21 @@
   height:100%;
   display: inline-block;
 }
-.ces_2019_space.is-line {
+.ces_2019_space.is-line span {
   opacity: 0;
+  height: 0;
+  transition: all .5s ease-in-out;
 }
-.ces_2019_space.is-line.js-animated {
+.ces_2019_space.is-line.js-animated span {
   opacity: 1;
-  animation-name: lineHeight;
-  animation-duration: .5s;
+  height: 140px;
 }
-.ces_2019_text + .ces_2019_space.is-line.js-animated {
-  /* transition-delay: .4s; */
+.ces_2019_space.medium.is-line.js-animated span {
+  height: 120px;
 }
-
-@keyframes lineHeight {
-  from {
-    height: 0;
-  }
-  to {
-    height: 140px;
-  }
+.ces_2019_space.small.is-line.js-animated span {
+  height: 60px;
 }
-
 
 /* CES_2019_Details 컴포넌트 */
 .ces_2019_details {

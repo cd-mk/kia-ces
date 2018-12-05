@@ -6,12 +6,23 @@ var mediaPlay = function() {
 }
 
 $(document).ready(function() {
+  $('.ces-onScreen').each(function() {
+    var winH = $(window).outerHeight(),
+        isFirst = $(this).eq(0).offset().top < winH;
+
+    if (isFirst) {
+      if (!$(this).eq(0).hasClass('js-animated')) {
+        $(this).eq(0).addClass('js-animated');
+      }
+    }
+  });
+  
   $('.ces-onScreen').scrollex({
-    mode: 'middle',
+    bottom: '-10%',
+    mode: 'bottom',
     enter: function() {
       $(this).addClass('js-animated');
-      console.log('enter')
-    }
+    },
   });
 
   $('.btn-play').on('click', mediaPlay);
