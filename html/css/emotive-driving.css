@@ -64,7 +64,7 @@
 }
 .ces_2019_text .ces_description {
   position: relative;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 60px;
   font-size: 18px;
   line-height: 1.7;
@@ -85,11 +85,13 @@
   padding-top: 54px;
 }
 .ces_2019_text .ces_description .animate-line {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
-  top: -35px;
+  top: -35px; */
   width: 0;
   height: 4px;
+  display:block;
+  margin:0 auto 50px;
   background: #bb162b;
   opacity: 0;
   transition: width .4s ease-in-out;
@@ -216,13 +218,13 @@
 }
 .ces_2019_space.is-line.js-animated span {
   opacity: 1;
-  height: 140px;
+  height: 100%;
 }
 .ces_2019_space.medium.is-line.js-animated span {
-  height: 120px;
+  height: 100%;
 }
 .ces_2019_space.small.is-line.js-animated span {
-  height: 60px;
+  height: 100%;
 }
 
 /* CES_2019_Details 컴포넌트 */

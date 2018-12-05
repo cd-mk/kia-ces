@@ -1,0 +1,7 @@
+layout-background 컴포넌트는 백그라운드 구분으로 그루핑되는 요소가 있어야 해서
+두번 사용하여 구분하였습니다.
+
+css명 section은 컴포넌트 div에 모두 적용함
+css명 ces-onScreen는 현재 섹션이 보여질때 모션 컨트롤 css 입니다.
+
+나머지 컨포넌트 옵션은 html내 주석처리 하였습니다.
