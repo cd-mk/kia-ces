@@ -768,319 +768,327 @@
 					
 					
 					<!-- Space of Emotive Driving START -->
-					<!-- S: layout-background 컴포넌트 -->
-					<div class="layout-background">
+					<!-- S: layout-background 컴포넌트 
+								background-color 값은 inline으로 입력
+								background-image 값은 picture 생성 및 태그 내 source srcset 으로 입력
+								background-image 없을 시 picture 요소 미 생성
+					-->
+					<div class="layout-background" style="background-color: #fff">
 						<picture>
 							<source srcset="./images/bg-layout-pc.png" media="(min-width: 1025px)">
 							<source srcset="./images/bg-layout-t.png" media="(min-width: 768px)">
 							<source srcset="./images/bg-layout-mo.png" media="(min-width: 320px)">
 							<img src="./images/bg-layout-pc.png" alt="">
 						</picture>
+
+						<!-- S: CES_2019_space 컴포넌트 (공백)
+								large: 140px (default)
+								medium : 120px
+								small : 60px
+						-->
+						<div class="ces_2019_space medium section">
+							<span></span>
+						</div>
+						<!-- E: CES_2019_space 컴포넌트 (공백) -->
+
+
+						<!-- S: CES_2019_text 컴포넌트 -->
+									<!-- (style1 or style2  (텍스트크기, 마진값, 구분선 차이)
+								layout full : full 배경
+								text-align: center(default), left, right 클래스로 align 설정 
+								text-color: black(default), 인라인으로 color 설정 -->
+						<div class="ces_2019_text style1 ces-onScreen section" style="color:#fff;">
+							<h2 class="ces_title">Space of Emotive Driving</h2>
+
+							<div class="ces_description">
+								<!-- style1 추가 시 해당 node 추가 -->
+								<span class="animate-line"></span>
+								<!-- //style1 추가 시 해당 node 추가 -->
+								<p>
+									We at Kia Motors are dedicated to ensuring that driver enjoyment<br>
+									remains a top priority in the coming era of future mobility.
+								</p>
+								<p>
+									Thanks to advanced technology that identifies your needs and emotional<br>
+									state of mind<br>
+									in real time, Kia strives to deliver a fully customized driving space that leads to<br>
+									a highly intuitive, unsurpassed in-vehicle mobility experience.
+								</p>
+								<p>
+									Amplify Your Joy with Emotive Driving.
+								</p>
+							</div>
+						</div>
+						<!-- E: CES_2019_text 컴포넌트 -->
+
+						<!-- S: CES_2019_media 컴포넌트 -->
+						<div class="ces_2019_media ces-onScreen section">
+							<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+								<img src="./images/@sample-video-img.jpg" alt="">
+								<a href="#url" class="btn-play">Play</a>
+							</div>
+							<iframe src="" frameborder="0"></iframe>
+						</div>
+						<!-- E: CES_2019_media 컴포넌트 -->
+
+						<!-- S: CES_2019_space 컴포넌트 (라인)
+									large: 140px (default)
+									medium : 120px
+									small : 60px
+							-->
+						<div class="ces_2019_space large ces-onScreen is-line section">
+							<span style="background-color:#bb162b;"></span>
+						</div>
+						<!-- E: CES_2019_space 컴포넌트 (라인) -->
+						
+						<!-- S: CES_2019_text 컴포넌트 -->
+						<div class="ces_2019_text section ces-onScreen">
+							<h2 class="ces_title">
+								&nbsp;&nbsp;&nbsp;&nbsp;KIA FUTURE<br>
+								TECHNOLOGY&nbsp;&nbsp;&nbsp;&nbsp;
+							</h2>
+						</div>
+						<!-- E: CES_2019_text 컴포넌트 -->
+
+						<!-- S: CES_2019_space 컴포넌트 (라인)
+									large: 140px (default)
+									medium : 120px
+									small : 60px
+							-->
+						<div class="ces_2019_space large ces-onScreen is-line section">
+							<span style="background-color:#bb162b;"></span>
+						</div>
+						<!-- E: CES_2019_space 컴포넌트 (라인) -->
+
+						<!-- S: CES_2019_text 컴포넌트 -->
+									<!-- (style1 or style2  (텍스트크기, 마진값, 구분선 차이)
+								layout full : full 배경
+								text-align: center(default), left, right 클래스로 align 설정 
+								text-color: black(default), 인라인으로 color 설정 -->
+						<div class="ces_2019_text style2 ces-onScreen section">
+							<span class="ces_summary">Technology that reads your emotions</span>
+							<h2 class="ces_title">R.E.A.D System</h2>
+							<h3 class="ces_sub-title">Real-time Emotion Adaptive Driving System</h3>
+							<div class="ces_description">
+								<p>
+									Meet R.E.A.D. System*, a future mobility technology that deciphers drivers’ emotions<br>
+									and simultaneously optimizes the in-vehicle environment for seamless comfort and pleasure.
+								</p>
+								<p>
+									R.E.A.D. System creates a personalized driver’s space (lighting, sound, cabin temperature, seat
+									vibration and scent)<br>
+									centered on the human senses by continuously assessing the driver’s emotional state<br>
+									through detection and analysis of bio signals (facial expression, heart beat and voice) with the help of<br>
+									AI machine learning.										
+								</p>
+								<p>
+									* Kia R.E.A.D. System was developed in conjunction with MIT Media Lab’s Affective Computing Group.
+								</p>
+							</div>
+						</div>
+						<!-- E: CES_2019_text 컴포넌트 --> 
+
+						<!-- S: CES_2019_media 컴포넌트 -->
+						<div class="ces_2019_media ces-onScreen section">
+							<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+								<img src="./images/@sample-video-img2.jpg" alt="">
+								<a href="#url" class="btn-play">Play</a>
+							</div>
+							<iframe src="" frameborder="0"></iframe>
+						</div>
+						<!-- E: CES_2019_media 컴포넌트 --> 
+
+						<!-- S: CES_2019_Details 컴포넌트 -->
+						<!-- text-vertical-align: text-top, text-center, text-bottom 으로 세로 정렬 선택 -->
+						<div class="ces_2019_details section text-bottom ces-onScreen">
+							<ul class="details-list">
+								<li>
+									<div class="details-content">
+										<span class="details-summary">01</span>
+										<span class="details-title">WAKE UP</span>
+										<p class="details-text">
+											Look Front, holding the wheel
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details1-1.jpg" alt="">
+									</div>
+								</li>
+								<li>
+									<div class="details-content">
+										<span class="details-summary">02</span>
+										<span class="details-title">UNDERSTAND YOU</span>
+										<p class="details-text">
+											Sense your facial expression
+											Vocal emotion and vital signs
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details1-2.jpg" alt="">
+									</div>
+								</li>
+								<li>
+									<div class="details-content">
+										<span class="details-summary">03</span>
+										<span class="details-title">LEARN FROM YOU</span>
+										<p class="details-text">
+											Analyze your past reaction
+											In various driving condition											
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details1-3.jpg" alt="">
+									</div>
+								</li>
+								<li>
+									<div class="details-content">
+										<span class="details-summary">04</span>
+										<span class="details-title">NAVIGATE YOU<br>IN EMOTION</span>
+										<p class="details-text">
+											Autonomously control<br>
+											light, sound, scent,<br>
+											Temperature, seat vibration											
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details1-4.jpg" alt="">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- E: CES_2019_Details 컴포넌트 -->
+
+						<!-- S: CES_2019_space 컴포넌트 (라인)
+									large: 140px (default)
+									medium : 120px
+									small : 60px
+							-->
+						<div class="ces_2019_space ces-onScreen is-line medium section">
+							<span style="background-color:#bb162b;"></span>
+						</div>
+						<!-- E: CES_2019_space 컴포넌트 (라인) -->
+
 					</div>
 					<!-- E: layout-background 컴포넌트 -->
-					<!-- S: CES_2019_space 컴포넌트 (공백)
-								large: 140px (default)
-								medium : 120px
-								small : 60px
-						-->
-					<div class="ces_2019_space medium section">
-						<span></span>
-					</div>
-					<!-- E: CES_2019_space 컴포넌트 (공백) -->
-
-
-					<!-- S: CES_2019_text 컴포넌트 -->
-								<!-- (style1 or style2  (텍스트크기, 마진값, 구분선 차이)
-							layout full : full 배경
-							text-align: center(default), left, right 클래스로 align 설정 
-							text-color: black(default), 인라인으로 color 설정 -->
-					<div class="ces_2019_text style1 ces-onScreen section" style="color:#fff;">
-						<h2 class="ces_title">Space of Emotive Driving</h2>
-
-						<div class="ces_description">
-							<!-- style1 추가 시 해당 node 추가 -->
-							<span class="animate-line"></span>
-							<!-- //style1 추가 시 해당 node 추가 -->
-							<p>
-								We at Kia Motors are dedicated to ensuring that driver enjoyment<br>
-								remains a top priority in the coming era of future mobility.
-							</p>
-							<p>
-								Thanks to advanced technology that identifies your needs and emotional<br>
-								state of mind<br>
-								in real time, Kia strives to deliver a fully customized driving space that leads to<br>
-								a highly intuitive, unsurpassed in-vehicle mobility experience.
-							</p>
-							<p>
-								Amplify Your Joy with Emotive Driving.
-							</p>
-						</div>
-					</div>
-					<!-- E: CES_2019_text 컴포넌트 -->
-
-					<!-- S: CES_2019_media 컴포넌트 -->
-					<div class="ces_2019_media ces-onScreen section">
-						<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
-							<img src="./images/@sample-video-img.jpg" alt="">
-							<a href="#url" class="btn-play">Play</a>
-						</div>
-						<iframe src="" frameborder="0"></iframe>
-					</div>
-					<!-- E: CES_2019_media 컴포넌트 -->
-
-					<!-- S: CES_2019_space 컴포넌트 (라인)
-								large: 140px (default)
-								medium : 120px
-								small : 60px
-						-->
-					<div class="ces_2019_space large ces-onScreen is-line section">
-						<span style="background-color:#bb162b;"></span>
-					</div>
-					<!-- E: CES_2019_space 컴포넌트 (라인) -->
 					
-					<!-- S: CES_2019_text 컴포넌트 -->
-					<div class="ces_2019_text section ces-onScreen">
-						<h2 class="ces_title">
-							&nbsp;&nbsp;&nbsp;&nbsp;KIA FUTURE<br>
-							TECHNOLOGY&nbsp;&nbsp;&nbsp;&nbsp;
-						</h2>
-					</div>
-					<!-- E: CES_2019_text 컴포넌트 -->
-
-					<!-- S: CES_2019_space 컴포넌트 (라인)
-								large: 140px (default)
-								medium : 120px
-								small : 60px
-						-->
-					<div class="ces_2019_space large ces-onScreen is-line section">
-						<span style="background-color:#bb162b;"></span>
-					</div>
-					<!-- E: CES_2019_space 컴포넌트 (라인) -->
-
-					<!-- S: CES_2019_text 컴포넌트 -->
-								<!-- (style1 or style2  (텍스트크기, 마진값, 구분선 차이)
-							layout full : full 배경
-							text-align: center(default), left, right 클래스로 align 설정 
-							text-color: black(default), 인라인으로 color 설정 -->
-					<div class="ces_2019_text style2 ces-onScreen section">
-						<span class="ces_summary">Technology that reads your emotions</span>
-						<h2 class="ces_title">R.E.A.D System</h2>
-						<h3 class="ces_sub-title">Real-time Emotion Adaptive Driving System</h3>
-						<div class="ces_description">
-							<p>
-								Meet R.E.A.D. System*, a future mobility technology that deciphers drivers’ emotions<br>
-								and simultaneously optimizes the in-vehicle environment for seamless comfort and pleasure.
-							</p>
-							<p>
-								R.E.A.D. System creates a personalized driver’s space (lighting, sound, cabin temperature, seat
-								vibration and scent)<br>
-								centered on the human senses by continuously assessing the driver’s emotional state<br>
-								through detection and analysis of bio signals (facial expression, heart beat and voice) with the help of<br>
-								AI machine learning.										
-							</p>
-							<p>
-								* Kia R.E.A.D. System was developed in conjunction with MIT Media Lab’s Affective Computing Group.
-							</p>
-						</div>
-					</div>
-					<!-- E: CES_2019_text 컴포넌트 --> 
-
-					<!-- S: CES_2019_media 컴포넌트 -->
-					<div class="ces_2019_media ces-onScreen section">
-						<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
-							<img src="./images/@sample-video-img2.jpg" alt="">
-							<a href="#url" class="btn-play">Play</a>
-						</div>
-						<iframe src="" frameborder="0"></iframe>
-					</div>
-					<!-- E: CES_2019_media 컴포넌트 --> 
-
-					<!-- S: CES_2019_Details 컴포넌트 -->
-					<!-- text-vertical-align: text-top, text-center, text-bottom 으로 세로 정렬 선택 -->
-					<div class="ces_2019_details section text-bottom ces-onScreen">
-						<ul class="details-list">
-							<li>
-								<div class="details-content">
-									<span class="details-summary">01</span>
-									<span class="details-title">WAKE UP</span>
-									<p class="details-text">
-										Look Front, holding the wheel
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details1-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="details-content">
-									<span class="details-summary">02</span>
-									<span class="details-title">UNDERSTAND YOU</span>
-									<p class="details-text">
-										Sense your facial expression
-										Vocal emotion and vital signs
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details1-2.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="details-content">
-									<span class="details-summary">03</span>
-									<span class="details-title">LEARN FROM YOU</span>
-									<p class="details-text">
-										Analyze your past reaction
-										In various driving condition											
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details1-3.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="details-content">
-									<span class="details-summary">04</span>
-									<span class="details-title">NAVIGATE YOU<br>IN EMOTION</span>
-									<p class="details-text">
-										Autonomously control<br>
-										light, sound, scent,<br>
-										Temperature, seat vibration											
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details1-4.jpg" alt="">
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!-- E: CES_2019_Details 컴포넌트 -->
-
-					<!-- S: CES_2019_space 컴포넌트 (라인)
-								large: 140px (default)
-								medium : 120px
-								small : 60px
-						-->
-					<div class="ces_2019_space ces-onScreen is-line medium section">
-						<span style="background-color:#bb162b;"></span>
-					</div>
-					<!-- E: CES_2019_space 컴포넌트 (라인) -->
 
 
 
-					<!-- S: layout-background 컴포넌트 -->
-					<div class="layout-background">
-						<picture>
-							<source srcset="./images/bg-layout-pc.png" media="(min-width: 1025px)">
-							<source srcset="./images/bg-layout-t.png" media="(min-width: 768px)">
-							<source srcset="./images/bg-layout-mo.png" media="(min-width: 320px)">
-							<img src="./images/bg-layout-pc.png" alt="">
-						</picture>
-					</div>
-					<!-- E: layout-background 컴포넌트 -->
-					<!-- S: CES_2019_text 컴포넌트 -->
+					<!-- S: layout-background 컴포넌트
+						background-color 값은 inline으로 입력
+						background-image 값은 picture 생성 및 태그 내 source srcset 으로 입력
+						background-image 없을 시 picture 요소 미 생성
+					 -->
+					<div class="layout-background" style="background-color:#fff">
+
+						<!-- S: CES_2019_text 컴포넌트 -->
 								<!-- (style1 or style2  (텍스트크기, 마진값, 구분선 차이)
 							full_white : full 흰배경
 							full_gray : full 
 							text-align: center(default), left, right 클래스로 align 설정 
 							text-color: black(default), 인라인으로 color 설정 -->
-					<div class="ces_2019_text style2 full_white ces-onScreen section">
-						<span class="ces_summary">Technology that reads your eyes and fingertips</span>
-						<h2 class="ces_title">V-Touch</h2>
-						<h3 class="ces_sub-title">Virtual Touch</h3>
-						<div class="ces_description">
-							<p>
-								V-Touch is the world’s first long-range virtual gesture recognition technology<br>
-								that enables effortless control of numerous vehicle features with the simple swipe of a finger.
-							</p>
-							<p>
-								V-Touch tracks the occupant's sightline and fingertip position with a 3D camera,<br>
-								then instantly and accurately controls the desired vehicle feature.<br>
-								Its simple yet sophisticated user interface is unparalleled compared to other preexisting gesture control systems.
-							</p>
-							<p>
-								Kia is making the future of mobility as easy and intuitive as possible<br>
-								by replacing the need to physically press buttons or give voice commands<br>
-								with a simple glance and movement of your fingertip.
-							</p>
+						<div class="ces_2019_text style2 full_white ces-onScreen section">
+							<span class="ces_summary">Technology that reads your eyes and fingertips</span>
+							<h2 class="ces_title">V-Touch</h2>
+							<h3 class="ces_sub-title">Virtual Touch</h3>
+							<div class="ces_description">
+								<p>
+									V-Touch is the world’s first long-range virtual gesture recognition technology<br>
+									that enables effortless control of numerous vehicle features with the simple swipe of a finger.
+								</p>
+								<p>
+									V-Touch tracks the occupant's sightline and fingertip position with a 3D camera,<br>
+									then instantly and accurately controls the desired vehicle feature.<br>
+									Its simple yet sophisticated user interface is unparalleled compared to other preexisting gesture control systems.
+								</p>
+								<p>
+									Kia is making the future of mobility as easy and intuitive as possible<br>
+									by replacing the need to physically press buttons or give voice commands<br>
+									with a simple glance and movement of your fingertip.
+								</p>
+							</div>
 						</div>
-					</div>
-					<!-- E: CES_2019_text 컴포넌트 -->
+						<!-- E: CES_2019_text 컴포넌트 -->
 
-					<!-- S: CES_2019_media 컴포넌트 -->
-					<div class="ces_2019_media ces-onScreen section">
-						<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
-							<img src="./images/@sample-video-img3.jpg" alt="">
-							<a href="#url" class="btn-play">Play</a>
+						<!-- S: CES_2019_media 컴포넌트 -->
+						<div class="ces_2019_media ces-onScreen section">
+							<div class="img-wrap" data-src="https://www.youtube.com/embed/BirCjiLYPpY">
+								<img src="./images/@sample-video-img3.jpg" alt="">
+								<a href="#url" class="btn-play">Play</a>
+							</div>
+							<iframe src="" frameborder="0"></iframe>
 						</div>
-						<iframe src="" frameborder="0"></iframe>
-					</div>
-					<!-- E: CES_2019_media 컴포넌트 -->
+						<!-- E: CES_2019_media 컴포넌트 -->
 
-					<!-- S: CES_2019_Details 컴포넌트 -->
-					<div class="ces_2019_details section ces-onScreen text-center ">
-						<ul class="details-list">
-							<li>
-								<div class="details-content">
-									<span class="details-summary">01</span>
-									<span class="details-title">WAKE UP</span>
-									<p class="details-text">
-										Look Front, holding the wheel
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details2-1.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="details-content">
-									<span class="details-summary">02</span>
-									<span class="details-title">POINT</span>
-									<p class="details-text">
-										Sense your facial expression
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details2-2.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="details-content">
-									<span class="details-summary">03</span>
-									<span class="details-title">GESTURE</span>
-									<p class="details-text">
-										Analyze past reaction in drivign
-										condition
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details2-3.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<div class="details-content">
-									<span class="details-summary">04</span>
-									<span class="details-title">EXPERIENCE</span>
-									<p class="details-text">
-										Autonomously control light
-									</p>
-								</div>
-								<div class="details-bg">
-									<img src="./images/@sample-details2-4.jpg" alt="">
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!-- E: CES_2019_Details 컴포넌트 -->
+						<!-- S: CES_2019_Details 컴포넌트 -->
+						<div class="ces_2019_details section ces-onScreen text-center ">
+							<ul class="details-list">
+								<li>
+									<div class="details-content">
+										<span class="details-summary">01</span>
+										<span class="details-title">WAKE UP</span>
+										<p class="details-text">
+											Look Front, holding the wheel
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details2-1.jpg" alt="">
+									</div>
+								</li>
+								<li>
+									<div class="details-content">
+										<span class="details-summary">02</span>
+										<span class="details-title">POINT</span>
+										<p class="details-text">
+											Sense your facial expression
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details2-2.jpg" alt="">
+									</div>
+								</li>
+								<li>
+									<div class="details-content">
+										<span class="details-summary">03</span>
+										<span class="details-title">GESTURE</span>
+										<p class="details-text">
+											Analyze past reaction in drivign
+											condition
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details2-3.jpg" alt="">
+									</div>
+								</li>
+								<li>
+									<div class="details-content">
+										<span class="details-summary">04</span>
+										<span class="details-title">EXPERIENCE</span>
+										<p class="details-text">
+											Autonomously control light
+										</p>
+									</div>
+									<div class="details-bg">
+										<img src="./images/@sample-details2-4.jpg" alt="">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- E: CES_2019_Details 컴포넌트 -->
 
-					<!-- S: CES_2019_space 컴포넌트 (라인)
-								large: 140px (default)
-								medium : 120px
-								small : 60px
-						-->
-					<div class="ces_2019_space large ces-onScreen is-line section">
-						<span style="background-color:#bb162b;"></span>
+						<!-- S: CES_2019_space 컴포넌트 (라인)
+									large: 140px (default)
+									medium : 120px
+									small : 60px
+							-->
+						<div class="ces_2019_space large ces-onScreen is-line section">
+							<span style="background-color:#bb162b;"></span>
+						</div>
+						<!-- E: CES_2019_space 컴포넌트 (라인) -->
+
 					</div>
-					<!-- E: CES_2019_space 컴포넌트 (라인) -->
+					<!-- E: layout-background 컴포넌트 -->
+					
 
 					<!-- S: CES_2019_films 컴포넌트 -->
 					<!-- import slick js plugin -->

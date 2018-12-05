@@ -12,6 +12,10 @@
   width: 100%;
 }
 .layout-background img {
+  max-width: 100%;
+}
+.layout-background.not-mobile picture img {
+  max-width: none;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -206,6 +210,7 @@
 
 /* CES_2019_space 컴포넌트 */
 .ces_2019_space {
+  position: relative;
   width:100%;
   height: 140px;
   text-align:center;

@@ -1,9 +1,19 @@
-var layoutHeight = function() {
-  $('.layout-background').each(function() {
-    var imgHeight = $(this).find('img').outerHeight();
+var isLayoutMobile = function() {
+  var winW = $(window).outerWidth();
 
-    $(this).find('picture').height(imgHeight);
+  if (winW > 768) {
+    $('.layout-background').addClass('not-mobile');
+  }
+
+  $(window).resize(function() {
+    winW = $(window).outerWidth();
+    if (winW < 768) {
+      $('.layout-background').removeClass('not-mobile');
+    } else if (winW > 768) {
+      $('.layout-background').addClass('not-mobile');
+    }
   });
+
 }
 
 
@@ -90,7 +100,7 @@ var cesSlideInit = function() {
 
 $(document).ready(function() {
   if ($('.layout-background').length) {
-    layoutHeight();
+    isLayoutMobile();
   }
   if ($('.ces-onScreen').length) {
     cesScrollEffect();
