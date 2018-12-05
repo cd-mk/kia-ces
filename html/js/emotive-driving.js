@@ -7,8 +7,10 @@ var mediaPlay = function() {
 
 $(document).ready(function() {
   $('.ces-onScreen').scrollex({
+    mode: 'middle',
     enter: function() {
       $(this).addClass('js-animated');
+      console.log('enter')
     }
   });
 
