@@ -78,7 +78,7 @@
 }
 .ces_2019_text .ces_summary {
   display: inline-block;
-  margin-bottom: 22px;
+  margin-bottom: 0;
   font-size: 22px;
 
   position: relative;
