@@ -2,7 +2,7 @@
 
 /* 도슨튼 컴포넌트 */
 .ces_docent {width:100%;background:#262631 url(images/docent_bg.jpg) no-repeat 50% 50%;}
-.ces_docent .inner {padding:40px 40px;max-width:860px;margin:0 auto;color:#fff;}
+.ces_docent .inner {padding:40px;max-width:860px;margin:0 auto;color:#fff;}
 .ces_docent .ces_docent_title {font-size:24px;font-family: "kiaB";line-height:1.3;}
 .ces_docent .ces_docent_description {font-size:15px;line-height:1.733em;margin-top:30px;}
 .ces_docent p {margin-top:40px;}
@@ -13,6 +13,11 @@
     }
 
   @media(max-width:768px){
+.ces_docent {background:#25252f url(images/docent_bg_mo.jpg) no-repeat 50% 50%;}
+.ces_docent .inner {padding:15px;max-width:640px;}
+.ces_docent .ces_docent_title {font-size:16px;line-height:1.3;}
+.ces_docent .ces_docent_description {font-size:13px;line-height:1.5em;margin-top:15px;}
+.ces_docent p {margin-top:25px;}
   }
 
 
@@ -125,7 +130,6 @@
 }
 .ces_2019_text .ces_description > p {
   margin-top: 40px;
-
   position: relative;
   opacity: 0;
   bottom: 50px;
@@ -232,17 +236,17 @@
       font-size: 15px;
       line-height: 1.4;
     }
-    .ces_2019_text.style2 .ces_description {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+  
     .ces_2019_text.style2 .ces_sub-title {
         margin-top: 5px;
     }
     .ces_2019_text.style2 .ces_description {
         font-size: 13px;
-        margin-top: 15px;
-        margin-bottom: 20px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    .ces_2019_text .ces_description .note {
+      font-size: 12px;
     }
   }
 
@@ -330,7 +334,7 @@
     .ces_2019_media {
       max-width: 100%;
       height: 170px;
-      margin: 0 15px;
+      margin: 0 15px 20px 15px;
       -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
       -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
       box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
@@ -392,10 +396,10 @@
     height: 70px;
   }
   .ces_2019_space.medium {
-    height: 60px;
+    height: 40px;
   }
   .ces_2019_space.small {
-    height: 40px;
+    height: 20px;
   }
   .ces_2019_space span {width:2px;}
 }
@@ -521,7 +525,27 @@
       margin-left: 0;
       transition-delay: .2s;
     }
+    .ces_2019_details .details-list .details-content {
+      padding: 0 2%;
+      color: #fff;
+      letter-spacing: 0.05em;
+    }
+    .details-list .details-content .details-summary {
+      font-size: 12px;
+    }
+    .details-list .details-content .details-title {
+      margin-top: 5px;
+      font-family: "kiaM";
+      font-size: 12px;
+      line-height: 1.3;
+    }
+    .details-list .details-content .details-text {
+      margin-top: 8px;
+      font-size: 12px;
+      line-height: 1.6;
+    }
     .details-bg img {max-width: 100%;}
+    .details-bg {height:305px;overflow: hidden;}
   }
 
 
