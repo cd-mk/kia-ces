@@ -24,7 +24,6 @@ var cesMediaPlay = function() {
 
 var cesScrollEffect = function() {
   var stBottom = $(window).outerHeight() + $(window).scrollTop();
-
   $('.ces-onScreen').each(function() {
     if ($(this).offset().top < stBottom) {
       $(this).addClass('js-animated');
