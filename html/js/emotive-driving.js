@@ -13,16 +13,14 @@ var isLayoutMobile = function() {
       $('.layout-background').addClass('not-mobile');
     }
   });
-
-}
-
+};
 
 var cesMediaPlay = function() {
   var iframeSrc = $(this).closest('.img-wrap').data('src');
 
   $(this).closest('.img-wrap').next('iframe').attr('src', iframeSrc + '?autoplay=1');
   $(this).closest('.img-wrap').addClass('video-play');
-}
+};
 
 var cesScrollEffect = function() {
   var stBottom = $(window).outerHeight() + $(window).scrollTop();
@@ -40,7 +38,7 @@ var cesScrollEffect = function() {
       $(this).addClass('js-animated');
     }
   });
-}
+};
 
 var cesSlideInit = function() {
   $('.slider-for').slick({
@@ -93,7 +91,7 @@ var cesSlideInit = function() {
 
     $('.slider-for').slick('slickGoTo', goToSingleSlide);
   });
-}
+};
 
 $(document).ready(function() {
   if ($('.layout-background').length) {
