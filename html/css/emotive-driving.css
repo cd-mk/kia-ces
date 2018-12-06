@@ -2,10 +2,10 @@
 
 /* 도슨튼 컴포넌트 */
 .ces_docent {width:100%;background:#262631 url(images/docent_bg.jpg) no-repeat 50% 50%;}
-.ces_docent .inner {padding:40px;max-width:860px;margin:0 auto;color:#fff;}
+.ces_docent .inner {padding:35px;max-width:860px;margin:0 auto;color:#fff;}
 .ces_docent .ces_docent_title {font-size:24px;font-family: "kiaB";line-height:1.3;}
-.ces_docent .ces_docent_description {font-size:15px;line-height:1.733em;margin-top:30px;}
-.ces_docent p {margin-top:40px;}
+.ces_docent .ces_docent_description {font-size:15px;line-height:1.733em;margin-top:15px;}
+.ces_docent p {margin-top:30px;}
 .ces_docent strong {font-family: "kiaB";}
 .ces_docent p:first-child {margin-top:0;}
 
@@ -14,7 +14,7 @@
 
   @media(max-width:768px){
 .ces_docent {background:#25252f url(images/docent_bg_mo.jpg) no-repeat 50% 50%;}
-.ces_docent .inner {padding:15px;max-width:640px;}
+.ces_docent .inner {padding:15px 30px;max-width:640px;}
 .ces_docent .ces_docent_title {font-size:16px;line-height:1.3;}
 .ces_docent .ces_docent_description {font-size:13px;line-height:1.5em;margin-top:15px;}
 .ces_docent p {margin-top:25px;}
@@ -54,6 +54,7 @@
     }
 
   @media(max-width:768px){
+   
   }
 
 
@@ -94,7 +95,7 @@
 .ces_2019_text .ces_title {
   font-family: "kiaB";
   font-size: 74px;
-  line-height: 1;
+  line-height: 1.1;
   padding:20px 0;
 
   position: relative;
@@ -123,22 +124,20 @@
 }
 .ces_2019_text .ces_description {
   position: relative;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 60px;
   font-size: 18px;
   line-height: 1.7;
 }
 .ces_2019_text .ces_description > p {
-  margin-top: 40px;
+  margin-top: 35px;
   position: relative;
   opacity: 0;
   bottom: 50px;
   transition: all .5s ease-in-out;
   transition-delay: .6s;
 }
-.ces_2019_text .ces_description > p:nth-of-type(1) {
-  margin-top: 0;
-}
+
 .ces_2019_text .ces_description.line {
   padding-top: 54px;
 }
@@ -167,19 +166,28 @@
   bottom: 0;
   opacity: 1;
 }
-
+/*style1*/
+.ces_2019_text.style1 .ces_title {
+ padding:50px 0 20px 0;
+}
+.ces_2019_text.style1 .ces_description > p {
+  margin-top: 35px;
+}
 /*style2*/
 .ces_2019_text.style2 .ces_title {
   font-family: "kiaB";
   font-size: 60px;
   line-height: 1;
   padding:0;
-  margin-top:30px;
+  margin-top:25px;
 }
 .ces_2019_text.style2 .ces_description {
+  margin-top: 30px;
+  margin-bottom: 0;
   font-size: 15px;
-  margin-top:30px;
-  margin-bottom:30px;
+}
+.ces_2019_text.style2 .ces_description > p {
+  margin-top: 25px;
 }
 .ces_2019_text .ces_summary {
   display: inline-block;
@@ -187,15 +195,21 @@
   font-size: 22px;
 }
 .ces_2019_text.style2 .ces_sub-title {
-  margin-top:15px;
+  margin-top:10px;
 }
-
-
+/*style3*/
+.ces_2019_text.style3 .ces_title {
+  letter-spacing: 0.2em;
+}
+.ces_2019_text .ces_description > p:nth-of-type(1) {
+  margin-top: 0;
+}
+  @media(max-width:1024px){
+    .ces_2019_text {padding: 0 15px;box-sizing: border-box;}
+  }
   @media(max-width:768px){
-    .section {padding: 0 15px;box-sizing: border-box;}
-
-
     /* CES_2019_text 컴포넌트 */
+
     .ces_2019_text.js-animated .ces_description .animate-line {
       width: 45px;
     }
@@ -209,13 +223,6 @@
     .ces_2019_text .ces_title {
       font-size: 28px;
       padding: 10px 0;
-    }
-    .ces_2019_text.style2 .ces_title {
-      font-family: "kiaB";
-      font-size: 28px;
-      line-height: 1;
-      padding: 0;
-      margin-top:15px;
     }
     .ces_2019_text .ces_sub-title {
         margin-top: 10px;
@@ -236,7 +243,20 @@
       font-size: 15px;
       line-height: 1.4;
     }
-  
+    /*style1*/
+    .ces_2019_text.style1 .ces_title {
+    padding:15px 0 15px 0;
+    }
+
+    /*style2*/
+    .ces_2019_text.style2 .ces_title {
+      font-family: "kiaB";
+      font-size: 28px;
+      line-height: 1;
+      padding: 0;
+      margin-top:15px;
+    }
+
     .ces_2019_text.style2 .ces_sub-title {
         margin-top: 5px;
     }
@@ -248,7 +268,12 @@
     .ces_2019_text .ces_description .note {
       font-size: 12px;
     }
+    /*style3*/
+    .ces_2019_text.style3 .ces_title {
+      letter-spacing: 0.1em;
+    }
   }
+
 
 
 
@@ -327,14 +352,17 @@
   height: 100%;
   background: #000;
 }
+ @media(max-width:1024px){
+
+ }
 
   @media(max-width:768px){
-
     /* CES_2019_media 컴포넌트 */
+
     .ces_2019_media {
-      max-width: 100%;
+      max-width: 320px;
       height: 170px;
-      margin: 0 15px 20px 15px;
+      margin: 0 auto 0 auto;
       -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
       -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
       box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
@@ -356,6 +384,12 @@
 
 
 
+
+
+
+
+
+
 /* CES_2019_space 컴포넌트 */
 .ces_2019_space {
   position: relative;
@@ -363,6 +397,9 @@
   height: 140px;
   text-align:center;
 }
+  .ces_2019_space.large {
+    height: 140px;
+  }
 .ces_2019_space.medium {
   height: 120px;
 }
@@ -389,14 +426,18 @@
 .ces_2019_space.small.is-line.js-animated span {
   height: 100%;
 }
+@media(max-width:1024px){
+.ces_2019_space {padding: 0 15px;box-sizing: border-box;}
+}
 
 @media(max-width:768px){
   /* CES_2019_space 컴포넌트 */
-  .ces_2019_space {
+  
+  .ces_2019_space.large {
     height: 70px;
   }
   .ces_2019_space.medium {
-    height: 40px;
+    height: 60px;
   }
   .ces_2019_space.small {
     height: 20px;
@@ -496,11 +537,16 @@
 .ces_2019_details.text-bottom .details-list .details-content {
   bottom: 14%;
 }
+  @media(max-width:1024px){
+  .ces_2019_details {padding: 0 15px;box-sizing: border-box;}
+  }
+
   @media(max-width:768px){
     /* CES_2019_details 컴포넌트 */
     .ces_2019_details {
-      margin-top: 15px;
-      margin-bottom: 15px;
+      padding:0 15px 0 15px;box-sizing: border-box;
+      margin-bottom:15px;
+      margin-top:15px;
     }
     .ces_2019_details .details-list {
       width: 100%;
@@ -509,8 +555,9 @@
     .ces_2019_details .details-list > li {
       float: none;
       width: 100%;
-      margin-top:5px;
+      margin:5px auto 0 auto;
       bottom: 100px;
+      max-width: 320px;
     }
     .ces_2019_details .details-list > li:nth-child(2) {
       margin-top:5px;
@@ -522,7 +569,7 @@
       margin-top: 5px;
     }
     .ces_2019_details .details-list > li:nth-child(even) {
-      margin-left: 0;
+      margin-left: auto;
       transition-delay: .2s;
     }
     .ces_2019_details .details-list .details-content {
@@ -567,13 +614,13 @@
 
 /* CES_2019_films 컴포넌트 */
 .ces_2019_films {
-  padding: 120px 0 60px;
+  padding: 55px 0 60px;
 }
 .ces_2019_films .films-title {
   margin-bottom: 30px;
   font-size: 60px;
   text-align: center;
-  line-height: 1.7;
+  line-height: 1.2;
   color: #fff;
 }
 .ces_2019_films .films-slide {
@@ -688,6 +735,10 @@
 .ces_2019_films .films-slide .slider-nav .slick-slide.is-active .thumb-title {
   color: #bb162b;
 }
+
+  @media(max-width:1024px){
+  .ces_2019_films {padding: 0 15px;box-sizing: border-box;}
+  }
 
   @media(max-width:768px){
 
