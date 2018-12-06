@@ -25,15 +25,11 @@ var cesMediaPlay = function() {
 }
 
 var cesScrollEffect = function() {
-  var winH = $(window).outerHeight();
+  var stBottom = $(window).outerHeight() + $(window).scrollTop();
 
   $('.ces-onScreen').each(function() {
-    var isFirst = $(this).eq(0).offset().top < winH;
-
-    if (isFirst) {
-      if (!$(this).eq(0).hasClass('js-animated')) {
-        $(this).eq(0).addClass('js-animated');
-      }
+    if ($(this).offset().top < stBottom) {
+      $(this).addClass('js-animated');
     }
   });
 
