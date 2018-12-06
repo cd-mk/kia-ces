@@ -271,11 +271,13 @@
   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
 
-  position: relative;
   opacity: 0;
   bottom: 120px;
   transition: all .5s ease-in-out;
   transition-delay: .8s;
+}
+.ces_2019_details + .ces_2019_media {
+  transition-delay: .2s;
 }
 .ces_2019_media.js-animated {
   bottom: 0;
@@ -436,17 +438,17 @@
   bottom: 170px;
   transition: all .5s ease-in-out;
 }
-.ces_2019_details.js-animated .details-list > li {
+.ces_2019_details .details-list > li.js-animated {
   opacity: 1;
   bottom: 0;
 }
-.ces_2019_details.js-animated .details-list > li:nth-child(2) {
+.ces_2019_details .details-list > li.js-animated:nth-child(2) {
   transition-delay: .2s;
 }
-.ces_2019_details.js-animated .details-list > li:nth-child(3) {
+.ces_2019_details .details-list > li.js-animated:nth-child(3) {
   transition-delay: .4s;
 }
-.ces_2019_details.js-animated .details-list > li:last-child {
+.ces_2019_details .details-list > li.js-animated:last-child {
   transition-delay: .6s;
 }
 .ces_2019_details .details-list > li:nth-child(even) {
