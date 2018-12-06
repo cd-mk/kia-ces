@@ -12,10 +12,10 @@
   width: 100%;
 }
 .layout-background img {
-  max-width: 100%;
+  width: 100%;
 }
 .layout-background.not-mobile picture img {
-  max-width: none;
+  width: auto;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -248,7 +248,7 @@
   margin-bottom: 60px;
 }
 .ces_2019_details .details-list {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 .ces_2019_details .details-list::after {
@@ -259,7 +259,7 @@
 .ces_2019_details .details-list > li {
   position: relative;
   float: left;
-  width: 455px;
+  width: 48.5%;
 
   opacity: 0;
   bottom: 170px;
@@ -279,7 +279,7 @@
   transition-delay: .6s;
 }
 .ces_2019_details .details-list > li:nth-child(even) {
-  margin-left: 30px;
+  margin-left: 3%;
 }
 .ces_2019_details .details-list > li:nth-child(2) {
   margin-top: 80px;
@@ -317,14 +317,14 @@
   line-height: 1.6;
 }
 .ces_2019_details.text-top .details-list .details-content {
-  top: 70px;
+  top: 14%;
 }
 .ces_2019_details.text-center .details-list .details-content {
   top: 50%;
   transform: translateY(-50%);
 }
 .ces_2019_details.text-bottom .details-list .details-content {
-  bottom: 70px;
+  bottom: 14%;
 }
 
 /* CES_2019_films 컴포넌트 */
