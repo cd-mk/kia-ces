@@ -34,7 +34,7 @@ var cesScrollEffect = function() {
   });
 
   $('.ces-onScreen').scrollex({
-    bottom: '-10%',
+    bottom: '-5%',
     mode: 'bottom',
     enter: function() {
       $(this).addClass('js-animated');
@@ -60,6 +60,7 @@ var cesSlideInit = function() {
     .slick({
       slidesToShow: 5,
       slidesToScroll: 5,
+      arrows: false,
       dots: false,
       focusOnSelect: false,
       infinite: false,
