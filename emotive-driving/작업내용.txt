@@ -4,4 +4,20 @@ layout-background 컴포넌트는 백그라운드 구분으로 그루핑되는 요소가 있어야 해서
 css명 section은 컴포넌트 div에 모두 적용함
 css명 ces-onScreen는 현재 섹션이 보여질때 모션 컨트롤 css 입니다.
 
-나머지 컨포넌트 옵션은 html내 주석처리 하였습니다.
+나머지 컨포넌트 옵션은 html 내에 설명 하였습니다.
+
+
+1. emotive-driving.html (어써페이지)
+js/kia-source 폴더는 참고용
+
+2.component 폴더 
+컴포넌트 7개
+layout-background : 배경이미지 및 배경색상을 그루핑하는 레이아웃 컴포넌트
+ces_docent  : 상단 도슨튼 콘텐츠
+ces_2019_space  : 공백 및 라인 컴포넌트
+ces_2019_text  : 타이틀/서브타이틀/디스크립션/서머리타이틀 조합된 컴포넌트
+ces_2019_details : 4가지 도식화 컴포넌트
+ces_2019_media : 유투브동영상 컴포넌트
+ces_2019_films : 슬라이드 영상 컴포넌트
+
+
