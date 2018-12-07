@@ -21,7 +21,7 @@
 .ces_2019_details + .ces_2019_media.ces-onScreen {
   transition-delay: .2s;
 }
-.ces_2019_media.js-animated {
+.ces_2019_media.ces-onScreen.js-animated {
   bottom: 0;
   opacity: 1;
 }
