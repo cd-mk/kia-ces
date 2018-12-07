@@ -19,11 +19,15 @@
   position: relative;
   float: left;
   width: 48.5%;
-
+}
+.ces_2019_details .details-list > li.ces-onScreen {
   opacity: 0;
   bottom: 170px;
   transition: all .5s ease-in-out;
   transition-delay: .2s;
+}
+.ces_2019_details .details-list > li.ces-onScreen:nth-child(even) {
+  transition-delay: .4s;
 }
 .ces_2019_details .details-list > li.js-animated {
   opacity: 1;
@@ -31,7 +35,6 @@
 }
 .ces_2019_details .details-list > li:nth-child(even) {
   margin-left: 3%;
-  transition-delay: .4s;
 }
 .ces_2019_details .details-list > li:nth-child(2) {
   margin-top: 80px;
@@ -112,6 +115,8 @@
   }
   .ces_2019_details .details-list > li:nth-child(even) {
     margin-left: auto;
+  }
+  .ces_2019_details .details-list > li.ces-onScreen:nth-child(even) {
     transition-delay: .2s;
   }
   .ces_2019_details .details-list .details-content {

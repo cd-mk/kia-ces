@@ -9,13 +9,16 @@
   -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
   -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
-
+}
+.ces_2019_media.ces-onScreen {
   opacity: 0;
   bottom: 120px;
   transition: all .5s ease-in-out;
+}
+.ces_2019_text + .ces_2019_media.ces-onScreen {
   transition-delay: .8s;
 }
-.ces_2019_details + .ces_2019_media {
+.ces_2019_details + .ces_2019_media.ces-onScreen {
   transition-delay: .2s;
 }
 .ces_2019_media.js-animated {
@@ -67,6 +70,8 @@
     -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.35);
+  }
+  .ces_2019_media.ces-onScreen {
     bottom: 100px;
   }
 
