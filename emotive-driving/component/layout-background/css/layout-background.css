@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* layout 컴포넌트 */
+.layout-background {
+  position: relative;
+}
+.layout-background picture {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.layout-background img {
+  width: 100%;
+}
+.layout-background.not-mobile picture img {
+  width: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
