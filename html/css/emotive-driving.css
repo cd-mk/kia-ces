@@ -718,6 +718,7 @@ content:''; clear:both;display:inline-block;width:60px;height:10px
   float: left;
   width: 176px;
   margin: 0 7.5px;
+  cursor: pointer;
 }
 .ces_2019_films .films-slide .slider-nav .thumb-img {
   position: relative;
