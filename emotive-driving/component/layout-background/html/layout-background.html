@@ -74,11 +74,20 @@
 			<div id="content" class="subContents" style="padding-top:0;">
 				<div class="par parsys">
 
-					<!-- S: layout-background 컴포넌트 
-								background-color 값은 inline으로 입력
-								background-image 값은 picture 생성 및 태그 내 source srcset 으로 입력
-								background-image 없을 시 picture 요소 미 생성
-					-->
+
+				<div style="background:#333;padding:20px;color:#fff;width:600px;margin:0 auto;">
+					<h1>layout-background 컴포넌트</h1>
+					<br>
+					모든 컴포넌트에 section 클래스 공통으로 사용 (별로의 스크립트와 css적용은 하지 않음) <br>
+					scrollext 모션 적용 시 ces-onScreen 클래스 사용
+					<br>
+					background-color 값은 inline으로 입력<br>
+					background-image 값은 picture 생성 및 태그 내 source srcset 으로 입력<br>
+					background-image 없을 시 picture 요소 미 출력
+				</div>
+
+
+					<!-- S: layout-background 컴포넌트 -->
 					<div class="layout-background" style="background-color: #efefef">
 						<picture>
 							<source srcset="../images/bg-layout-pc.png" media="(min-width: 1025px)">
@@ -87,7 +96,7 @@
 							<img src="../images/bg-layout-pc.png" alt="">
 						</picture>
 					</div>
-          <!-- E: layout-background 컴포넌트 -->
+          			<!-- E: layout-background 컴포넌트 -->
           
 				</div>
 			</div>

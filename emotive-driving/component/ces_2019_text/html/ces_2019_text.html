@@ -74,13 +74,29 @@
 			<div id="content" class="subContents" style="padding-top:0;">
 				<div class="par parsys">
 
-					<!-- S: CES_2019_text 컴포넌트 -->
-          <!--
-            (style1 or style2(텍스트크기, 마진값, 구분선 차이) or style3 (style1에서 headings 자간 넓이) 
-            layout full : full 배경
-            text-align: center(default), left, right 클래스로 align 설정 
-            text-color: black(default), 인라인으로 color 설정 
-          -->
+
+				<div style="background:#333;padding:20px;color:#fff;width:600px;margin:0 auto;">
+					<h1>CES_2019_text 컴포넌트</h1>
+					<br>
+					모든 컴포넌트에 section 클래스 공통으로 사용 (별로의 스크립트와 css적용은 하지 않음) <br>
+					scrollext 모션 적용 시 ces-onScreen 클래스 사용
+					<br>
+					디자인 유형 3가지 (style1, style2, style3)<br>
+					style1 : 상단 비주얼 영역 텍스트 (디스크립션 위 빨간 가로 구분선)<br>
+					style2 (폰트크기, 마진값 축소 )<br>
+					style3 (style1에서 headings 자간 넓이 확장)
+					<br><br>
+
+					폰터정렬: center(default), left, right 클래스로 align 설정<br>
+					폰트컬러: black(default), 인라인으로 color 설정
+					<br><br>
+
+					강조문구 : pointer 클래스 추가<br>
+					참조문구 : note 클래스 추가
+				</div>
+
+
+					<!-- S: CES_2019_text 컴포넌트 (style1) -->
           <div class="ces_2019_text style1 ces-onScreen section" style="color:#fff;">
             <h2 class="ces_title">Space of Emotive Driving</h2>
 
@@ -97,13 +113,19 @@
                 in real time, Kia strives to deliver a fully customized driving space that leads to<br>
                 a highly intuitive, unsurpassed in-vehicle mobility experience.
               </p>
-              <p>
+							<p class="point">
                 Amplify Your Joy with Emotive Driving.
               </p>
             </div>
-          </div>
+					</div>
+					<!-- E: CES_2019_text 컴포넌트 (style1) -->
 
-          <div class="ces_2019_text style2 left ces-onScreen section">
+
+
+
+
+					<!-- S: CES_2019_text 컴포넌트 (style2) -->
+          <div class="ces_2019_text style2 ces-onScreen section">
             <span class="ces_summary">Technology that reads your emotions</span>
             <h2 class="ces_title">R.E.A.D System</h2>
             <h3 class="ces_sub-title">Real-time Emotion Adaptive Driving System</h3>
@@ -121,12 +143,18 @@
                 * Kia R.E.A.D. System was developed in conjunction with MIT Media Lab’s Affective Computing Group.
               </p>
             </div>
-          </div>
+					</div>
+					<!-- E: CES_2019_text 컴포넌트 (style2) -->
+					
 
+
+
+					<!-- S: CES_2019_text 컴포넌트 (style3) -->
           <div class="ces_2019_text section style3 ces-onScreen">
             <h2 class="ces_title">KIA FUTURE<br>TECHNOLOGY</h2>
-          </div>
-          <!-- E: CES_2019_text 컴포넌트 -->
+					</div>
+					<!-- E: CES_2019_text 컴포넌트 (style3) -->
+          
 
           
 				</div>
