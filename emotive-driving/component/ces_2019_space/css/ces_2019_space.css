@@ -7,9 +7,9 @@
   height: 140px;
   text-align:center;
 }
-  .ces_2019_space.large {
-    height: 140px;
-  }
+.ces_2019_space.large {
+  height: 140px;
+}
 .ces_2019_space.medium {
   height: 120px;
 }
@@ -21,7 +21,7 @@
   height:100%;
   display: inline-block;
 }
-.ces_2019_space.is-line span {
+.ces_2019_space.is-line.ces-onScreen span {
   opacity: 0;
   height: 0;
   transition: all .5s ease-in-out;
