@@ -201,6 +201,12 @@
 .ces_2019_text.style3 .ces_title {
   letter-spacing: 0.2em;
 }
+.ces_2019_text.style3 .ces_title:before {
+content:''; clear:both;display:inline-block;width:127px;height:10px
+}
+.ces_2019_text.style3 .ces_title:after {
+content:''; clear:both;display:inline-block;width:60px;height:10px
+}
 .ces_2019_text .ces_description > p:nth-of-type(1) {
   margin-top: 0;
 }
@@ -271,6 +277,12 @@
     /*style3*/
     .ces_2019_text.style3 .ces_title {
       letter-spacing: 0.1em;
+    }
+    .ces_2019_text.style3 .ces_title:before {
+    width:48px;
+    }
+    .ces_2019_text.style3 .ces_title:after {
+    width:15px;
     }
   }
 
