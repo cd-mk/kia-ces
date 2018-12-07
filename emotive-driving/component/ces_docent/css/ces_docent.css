@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* docent 컴포넌트 */
+.ces_docent {width:100%;background:#262631 url(../images/docent_bg.jpg) no-repeat 50% 50%;}
+.ces_docent .inner {padding:35px;max-width:860px;margin:0 auto;color:#fff;}
+.ces_docent .ces_docent_title {font-size:24px;font-family: "kiaB";line-height:1.3;}
+.ces_docent .ces_docent_description {font-size:15px;line-height:1.733em;margin-top:15px;}
+.ces_docent p {margin-top:30px;}
+.ces_docent strong {font-family: "kiaB";}
+.ces_docent p:first-child {margin-top:0;}
+
+@media(max-width:768px){
+  .ces_docent {background:#25252f url(../images/docent_bg_mo.jpg) no-repeat 50% 50%;}
+  .ces_docent .inner {padding:15px 30px;max-width:640px;}
+  .ces_docent .ces_docent_title {font-size:16px;line-height:1.3;}
+  .ces_docent .ces_docent_description {font-size:13px;line-height:1.5em;margin-top:15px;}
+  .ces_docent p {margin-top:25px;}
+}
