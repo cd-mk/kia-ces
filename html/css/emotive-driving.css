@@ -480,6 +480,7 @@ content:''; clear:both;display:inline-block;width:60px;height:10px
 .ces_2019_details .details-list {
   max-width: 940px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .ces_2019_details .details-list::after {
   content: '';
