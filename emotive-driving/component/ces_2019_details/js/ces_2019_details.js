@@ -15,8 +15,19 @@ var cesScrollEffect = function() {
   });
 };
 
+var cesDetailSlide = function() {
+  $('.ces_2019_details .details-list').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+};
+
 $(document).ready(function() {
   if ($('.ces-onScreen').length) {
     cesScrollEffect();
+  }
+  if ($('.ces_2019_details').length) {
+    cesDetailSlide();
   }
 });

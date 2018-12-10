@@ -2,50 +2,46 @@
 
 /* CES_2019_Details 컴포넌트 */
 .ces_2019_details {
+  overflow: hidden;
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.ces_2019_details .details-list {
+.ces_2019_details .details-wrap {
+  position: relative;
   max-width: 940px;
   margin: 0 auto;
-  overflow: hidden;
+  text-align: center;
 }
-.ces_2019_details .details-list::after {
-  content: '';
-  display: table;
-  clear: both;
+.details-wrap .details-list {
+  max-width: 100%;
 }
-.ces_2019_details .details-list > li {
+.details-list .slick-list {
+  overflow: visible;
+}
+.details-list .details-item {
   position: relative;
-  float: left;
-  width: 48.5%;
 }
-.ces_2019_details .details-list > li.ces-onScreen {
-  opacity: 0;
-  bottom: 170px;
-  transition: all .5s ease-in-out;
-  transition-delay: .2s;
+.details-list .slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 55px;
+  height: 70px;
+  text-indent: -9999px;
+  transform: translateY(-50%);
+  z-index: 99;
 }
-.ces_2019_details .details-list > li.ces-onScreen:nth-child(even) {
-  transition-delay: .4s;
+.details-list .slick-arrow.slick-disabled {
+  opacity: .5;
 }
-.ces_2019_details .details-list > li.js-animated {
-  opacity: 1;
-  bottom: 0;
+.details-list .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../images/btn-slide-prev.png) no-repeat 0 0;
 }
-.ces_2019_details .details-list > li:nth-child(even) {
-  margin-left: 3%;
+.details-list .slick-arrow.slick-next {
+  right: 0;
+  background: url(../images/btn-slide-next.png) no-repeat 0 0;
 }
-.ces_2019_details .details-list > li:nth-child(2) {
-  margin-top: 80px;
-}
-.ces_2019_details .details-list > li:nth-child(3) {
-  margin-top: -50px;
-}
-.ces_2019_details .details-list > li:last-child {
-  margin-top: 30px;
-}
-.ces_2019_details .details-list .details-content {
+.details-list .details-item .details-content {
   position: absolute;
   left: 0;
   width: 100%;
@@ -54,73 +50,56 @@
   text-align: center;
   box-sizing: border-box;
 }
-.details-list .details-content .details-summary {
+.details-item .details-content .details-summary {
   display: block;
   font-family: "kiaB";
   font-size: 24px;
 }
-.details-list .details-content .details-title {
+.details-item .details-content .details-title {
   display: block;
   margin-top: 13px;
   font-family: "kiaB";
   font-size: 18px;
   line-height: 1.3;
 }
-.details-list .details-content .details-text {
+.details-item .details-content .details-text {
   margin-top: 18px;
   font-size: 15px;
   line-height: 1.6;
 }
-.ces_2019_details.text-top .details-list .details-content {
+.details-item .details-bg {
+  display: inline-block;
+}
+.ces_2019_details.text-top .details-item .details-content {
   top: 14%;
 }
-.ces_2019_details.text-center .details-list .details-content {
+.ces_2019_details.text-center .details-item .details-content {
   top: 50%;
   transform: translateY(-50%);
 }
-.ces_2019_details.text-bottom .details-list .details-content {
+.ces_2019_details.text-bottom .details-item .details-content {
   bottom: 14%;
-}
-
-@media(max-width:1024px){
-  .ces_2019_details {padding: 0 15px;box-sizing: border-box;}
 }
 
 @media(max-width:768px){
   /* CES_2019_details 컴포넌트 */
   .ces_2019_details {
-    padding:0 15px 0 15px;box-sizing: border-box;
     margin-bottom:15px;
     margin-top:15px;
+  }
+  .ces_2019_details .details-wrap {
+    padding: 0 10%;
+  }
+  .details-list .details-item {
+    padding: 0 10px;
+    box-sizing: border-box;
   }
   .ces_2019_details .details-list {
     width: 100%;
     margin: 0 auto;
   }
-  .ces_2019_details .details-list > li {
-    float: none;
-    width: 100%;
-    margin:5px auto 0 auto;
-    bottom: 100px;
-    max-width: 320px;
-  }
-  .ces_2019_details .details-list > li:nth-child(2) {
-    margin-top:5px;
-  }
-  .ces_2019_details .details-list > li:nth-child(3) {
-    margin-top: 5px;
-  }
-  .ces_2019_details .details-list > li:last-child {
-    margin-top: 5px;
-  }
-  .ces_2019_details .details-list > li:nth-child(even) {
-    margin-left: auto;
-  }
-  .ces_2019_details .details-list > li.ces-onScreen:nth-child(even) {
-    transition-delay: .2s;
-  }
   .ces_2019_details .details-list .details-content {
-    padding: 0 2%;
+    padding: 0 10px;
     color: #fff;
     letter-spacing: 0.05em;
   }
@@ -138,6 +117,10 @@
     font-size: 12px;
     line-height: 1.6;
   }
-  .details-bg img {max-width: 100%;}
-  .details-bg {height:305px;overflow: hidden;}
+  .details-item .details-bg {
+    height: 305px;
+  }
+  .details-item .details-bg img {
+    max-width: 100%;
+  }
 }
