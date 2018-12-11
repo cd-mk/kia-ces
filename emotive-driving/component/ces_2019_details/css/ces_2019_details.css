@@ -81,6 +81,7 @@
 .ces_2019_details.text-bottom .details-list .details-content {
   bottom: 14%;
 }
+.details-bg img {max-width: 100%;}/* 2018.12.11 추가 */
 
 @media(max-width:1024px){
   .ces_2019_details {padding: 0 15px;box-sizing: border-box;}
@@ -138,6 +139,6 @@
     font-size: 12px;
     line-height: 1.6;
   }
-  .details-bg img {max-width: 100%;}
+  /* .details-bg img {max-width: 100%;} 2018.12.11 삭제 */
   .details-bg {height:305px;overflow: hidden;}
 }

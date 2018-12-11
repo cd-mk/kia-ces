@@ -49,7 +49,7 @@
   top: 50%;
   width: 80px;
   height: 80px;
-  background: url(../images/btn-ces-play.svg) no-repeat 0 0;
+  background: url(../images/btn-ces-play-pc.png) no-repeat 0 0;/* 2018.12.11 파일명 수정 */
   text-indent: -9999px;
   transform: translate(-50%, -50%);
 }
@@ -78,6 +78,6 @@
   .ces_2019_media .img-wrap .btn-play {
     width: 60px;
     height: 60px;
-    background: url(../images/btn-ces-play.svg) no-repeat 0 0 /60px auto;
+    background: url(../images/btn-ces-play-mo.png) no-repeat 0 0 /60px auto;/* 2018.12.11 파일명 수정 */
   }
 }
