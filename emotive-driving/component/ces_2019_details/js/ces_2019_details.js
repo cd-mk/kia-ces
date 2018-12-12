@@ -14,17 +14,20 @@ var cesScrollEffect = function() {
     }
   });
 };
-
+// 2018.12.12 수정 시작
 var cesDetailSlide = function() {
   var $target = $('.details-list');
   var slideSetting = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: false,
-        dots: true
+      slidesToShow:1,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+      focusOnSelect: true,
+      variableWidth: true,
+      centerMode:true,
+      dots: true
       };
-  
+// 2018.12.12 수정 끝
   $(window).on('load resize', function() {
     if ($(window).width() > 768) {
       if ($target.hasClass('slick-initialized')) {

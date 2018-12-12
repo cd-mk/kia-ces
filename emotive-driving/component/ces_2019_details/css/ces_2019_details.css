@@ -2,7 +2,7 @@
 
 /* CES_2019_Details 컴포넌트 */
 .ces_2019_details {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 .ces_2019_details .details-list {
@@ -86,18 +86,21 @@
 }
 
 @media(max-width:1024px){
-  .ces_2019_details {padding: 0 15px;box-sizing: border-box;}
+  .ces_2019_details {padding: 0 15px;box-sizing: border-box;margin-bottom: 15px;}
+  .ces_2019_details .details-list {max-width: 990px;}
 }
 
 @media(max-width:768px){
   /* CES_2019_details 컴포넌트 */
   .ces_2019_details {
     overflow: hidden;
-    padding:0 4.6%;
+    /* padding:0 4.6%; */
     margin-bottom:15px;
     margin-top:15px;
+    padding:0;
     box-sizing: border-box;
   }
+
   .ces_2019_details.ces-onScreen {
     position: relative;
     opacity: 0;
@@ -144,17 +147,18 @@
   }
   .details-list .details-item .details-bg {
     position: relative;
-    height:305px;
+    /* height:305px; */
     overflow: hidden;
   }
   .details-list .details-item .details-bg img {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     top: 50%;
     width: 100%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
 
+  .details-list .details-item  {width:270px !important;}
   .details-list .slick-dots {
     display: flex !important;
     justify-content: center;

@@ -36,6 +36,12 @@
   line-height: 1.1;
   padding:20px 0;
 }
+.ces_2019_text .ces_title span {
+  font-family: "kiaM";
+  font-size: 45px;
+  display: block;
+  letter-spacing: 4px;
+}
 .ces_2019_text.ces-onScreen .ces_title {
   position: relative;
   opacity: 0;
@@ -65,7 +71,7 @@
 .ces_2019_text .ces_description {
   position: relative;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   font-size: 18px;
   line-height: 1.7;
 }
@@ -182,6 +188,7 @@
     transition-delay: .4s;
   }
   .ces_2019_text .ces_description > p {margin-top:30px;}
+  .ces_2019_text .ces_description > p br {display: none;}
   .ces_2019_text .ces_title {
     font-size: 28px;
     padding: 10px 0;
@@ -203,6 +210,7 @@
     margin-bottom: 30px;
     font-size: 15px;
     line-height: 1.4;
+    padding: 0 20px;
   }
 
   /*style1*/
@@ -218,6 +226,10 @@
     padding: 0;
     margin-top:15px;
   }
+  .ces_2019_text .ces_title span {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
   .ces_2019_text.style2 .ces_sub-title {
     margin-top: 5px;
   }
