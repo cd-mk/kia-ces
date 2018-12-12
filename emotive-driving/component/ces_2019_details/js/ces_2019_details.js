@@ -15,27 +15,6 @@ var cesScrollEffect = function() {
   });
 };
 
-var cesDetailsSlide = function() {
-  $('.details-list').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: false,
-    mobileFirst: true,
-    arrows: false,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: 'unslick'
-      }
-    ]
-  });
-
-  $(window).on('resize', function() {
-    $('.details-list').slick('resize');
-  });
-};
-
 var cesDetailSlide = function() {
   var $target = $('.details-list');
   var slideSetting = {

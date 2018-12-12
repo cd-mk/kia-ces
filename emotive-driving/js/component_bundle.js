@@ -92,6 +92,29 @@ var cesSlideInit = function() {
   });
 };
 
+var cesDetailSlide = function() {
+  var $target = $('.details-list');
+  var slideSetting = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: false,
+        dots: true
+      };
+  
+  $(window).on('load resize', function() {
+    if ($(window).width() > 768) {
+      if ($target.hasClass('slick-initialized')) {
+        $target.slick('unslick');
+      }
+      return;
+    }
+    if (!$target.hasClass('slick-initialized')) {
+      return $target.slick(slideSetting);
+    }
+  });
+};
+
 $(document).ready(function() {
   if ($('.layout-background').length) {
     isLayoutMobile();
@@ -101,6 +124,9 @@ $(document).ready(function() {
   }
   if ($('.ces_2019_films').length) {
     cesSlideInit();
+  }
+  if ($('.ces_2019_details').length) {
+    cesDetailSlide();
   }
   $('.ces_2019_media .btn-play').each(function() {
     $(this).on('click', cesMediaPlay);
