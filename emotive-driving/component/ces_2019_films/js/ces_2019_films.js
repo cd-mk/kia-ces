@@ -35,16 +35,26 @@ var cesSlideInit = function() {
         breakpoint: 767,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToScroll: 3,
+          variableWidth: true
         }
       }
     ]
   };
   var slideLength = $('.slider-nav > div').length;
+  
+  function setVariableSlide() {
+    var isVariable = true,
+        isMobile = $(window).width() < $(window).outerHeight();
 
-  if (slideLength < 6) {
-    slideNavSetting.variableWidth = false;
+    if (slideLength < 6 && !isMobile) {
+      isVariable = false;
+    }
+
+    return isVariable;
   }
+
+  slideNavSetting.variableWidth = setVariableSlide();
 
   $('.slider-for').slick({
     slidesToShow: 1,
