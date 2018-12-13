@@ -94,7 +94,6 @@
   /* CES_2019_details 컴포넌트 */
   .ces_2019_details {
     overflow: hidden;
-    /* padding:0 4.6%; */
     margin-bottom:15px;
     margin-top:15px;
     padding:0;
@@ -147,15 +146,7 @@
   }
   .details-list .details-item .details-bg {
     position: relative;
-    /* height:305px; */
     overflow: hidden;
-  }
-  .details-list .details-item .details-bg img {
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%); */
   }
 
   .details-list .details-item  {width:270px !important;}
@@ -163,9 +154,6 @@
     display: flex !important;
     justify-content: center;
     padding-top: 15px;
-  }
-  .details-list .slick-dots > li {
-    /* pointer-events: none; */
   }
   .details-list .slick-dots > li {
     float: left;
