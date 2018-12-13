@@ -14,7 +14,7 @@ var cesScrollEffect = function() {
     }
   });
 };
-// 2018.12.12 수정 시작
+
 var cesDetailSlide = function() {
   var $target = $('.details-list');
   var slideSetting = {
@@ -27,7 +27,6 @@ var cesDetailSlide = function() {
       centerMode:true,
       dots: true
       };
-// 2018.12.12 수정 끝
   $(window).on('load resize', function() {
     if ($(window).width() > 768) {
       if ($target.hasClass('slick-initialized')) {
