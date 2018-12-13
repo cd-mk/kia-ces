@@ -45,7 +45,8 @@ var cesSlideInit = function() {
     slidesToScroll: 1,
     arrows: true,
     fade: false,
-    infinite: false
+    infinite: false,
+    rtl: true
   });
 
   $('.slider-nav')
@@ -61,6 +62,7 @@ var cesSlideInit = function() {
       dots: false,
       infinite: false,
       variableWidth: true,
+      rtl: true,
       responsive: [
         {
           breakpoint: 767,
@@ -92,19 +94,19 @@ var cesSlideInit = function() {
   });
 };
 
-var cesDetailSlide = function () {
+var cesDetailSlide = function() {
   var $target = $('.details-list');
   var slideSetting = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: false,
-    focusOnSelect: true,
-    variableWidth: true,
-    centerMode: true,
-    dots: true
-  };
-  
+      slidesToShow:1,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+      focusOnSelect: true,
+      variableWidth: true,
+      centerMode:true,
+      dots: true,
+      rtl: true
+    };
   $(window).on('load resize', function() {
     if ($(window).width() > 768) {
       if ($target.hasClass('slick-initialized')) {
