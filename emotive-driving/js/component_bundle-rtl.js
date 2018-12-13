@@ -62,10 +62,9 @@ var cesSlideInit = function() {
   var slideLength = $('.slider-nav > div').length;
   
   function setVariableSlide() {
-    var isVariable = true,
-        isMobile = $(window).width() < $(window).outerHeight();
+    var isVariable = true;
 
-    if (slideLength < 6 && !isMobile) {
+    if (slideLength < 6) {
       isVariable = false;
     }
 
