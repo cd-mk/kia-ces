@@ -37,10 +37,9 @@ var cesSlideInit = function() {
       $('.slider-nav .slick-slide.slick-current').addClass('is-active');
       $('.nav-title').text(title);
     })
-    // 2018.12.12 수정 시작
     .slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
+      slidesToShow: 5,
+      slidesToScroll: 5,
       arrows: false,
       dots: false,
       infinite: false,
@@ -55,7 +54,6 @@ var cesSlideInit = function() {
         }
       ]
     });
-      // 2018.12.12 수정 끝
 
   $('.slider-for').on('afterChange', function(event, slick, currentSlide) {
     $('.slider-nav').slick('slickGoTo', currentSlide);

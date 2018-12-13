@@ -25,7 +25,8 @@ var cesDetailSlide = function() {
       focusOnSelect: true,
       variableWidth: true,
       centerMode:true,
-      dots: true
+      dots: true,
+      rtl: true
     };
   $(window).on('load resize', function() {
     if ($(window).width() > 768) {

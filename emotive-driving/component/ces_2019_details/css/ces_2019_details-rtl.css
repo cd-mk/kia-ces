@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* CES_2019_Details 컴포넌트 */
+.ces_2019_details {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.ces_2019_details .details-list {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.ces_2019_details .details-list::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.ces_2019_details .details-list .details-item {
+  position: relative;
+  float: right;
+  width: 48.5%;
+}
+.ces_2019_details .details-list .details-item.ces-onScreen {
+  opacity: 0;
+  bottom: 170px;
+  transition: all .5s ease-in-out;
+  transition-delay: .2s;
+}
+.ces_2019_details .details-list .details-item.ces-onScreen:nth-child(even) {
+  transition-delay: .4s;
+}
+.ces_2019_details .details-list .details-item.ces-onScreen.js-animated {
+  opacity: 1;
+  bottom: 0;
+}
+.ces_2019_details .details-list .details-item:nth-child(even) {
+  margin-right: 3%;
+}
+.ces_2019_details .details-list .details-item:nth-child(2) {
+  margin-top: 80px;
+}
+.ces_2019_details .details-list .details-item:nth-child(3) {
+  margin-top: -50px;
+}
+.ces_2019_details .details-list .details-item:last-child {
+  margin-top: 30px;
+}
+.details-list .details-item .details-content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 15%;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 99;
+}
+.details-item .details-content .details-summary {
+  display: block;
+  font-family: "kiaB";
+  font-size: 24px;
+}
+.details-item .details-content .details-title {
+  display: block;
+  margin-top: 13px;
+  font-family: "kiaB";
+  font-size: 18px;
+  line-height: 1.3;
+}
+.details-item .details-content .details-text {
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.details-list .details-item .details-bg img {
+  max-width: 100%;
+}
+.ces_2019_details.text-top .details-item .details-content {
+  top: 14%;
+}
+.ces_2019_details.text-center .details-item .details-content {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ces_2019_details.text-bottom .details-item .details-content {
+  bottom: 14%;
+}
+
+@media(max-width:1024px){
+  .ces_2019_details {padding: 0 15px;box-sizing: border-box;margin-bottom: 15px;}
+  .ces_2019_details .details-list {max-width: 990px;}
+}
+
+@media(max-width:768px){
+  /* CES_2019_details 컴포넌트 */
+  .ces_2019_details {
+    overflow: hidden;
+    margin-bottom:15px;
+    margin-top:15px;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  .ces_2019_details.ces-onScreen {
+    position: relative;
+    opacity: 0;
+    bottom: 50px;
+    transition: all .5s ease-in-out;
+  }
+  .ces_2019_details.ces-onScreen.js-animated {
+    opacity: 1;
+    bottom: 0;
+  }
+  .ces_2019_details .details-list {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .ces_2019_details .details-list .slick-list {
+    overflow: visible;
+  }
+  .ces_2019_details .details-list .details-item {
+    width: 100%;
+    padding: 0 5px;
+    opacity: 1 !important;
+    margin:0 !important;
+    bottom: 0 !important;
+    transition: none !important;
+  }
+  .ces_2019_details .details-list .details-content {
+    padding: 0 2%;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  .details-list .details-content .details-summary {
+    font-size: 13px;
+  }
+  .details-list .details-content .details-title {
+    margin-top: 5px;
+    font-family: "kiaM";
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .details-list .details-content .details-text {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .details-list .details-item .details-bg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .details-list .details-item  {width:270px !important;}
+  .details-list .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .details-list .slick-dots > li {
+    float: right;
+    width: 30px;
+    height: 2px;
+    margin-right: 2px;
+    background: #aeaeae;
+  }
+  .details-list .slick-dots > li:first-child {
+    margin-right: 0;
+  }
+  .details-list .slick-dots > li.slick-active {
+    background: #bb162b;
+  }
+  .details-list .slick-dots > li > button {
+    text-indent: -9999px;
+  }
+}
