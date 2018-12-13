@@ -1,13 +1,78 @@
+이미지변경
 component/ces_2019_media/images/@sample-video-img.jpg
 component/ces_2019_media/images/@sample-video-img2.jpg
 
+이미지추가
+component/ces_2019_films/images/@sample-slide-comingSoon.jpg
 
 
-html\kia-ces\emotive-driving.html
-html\kia-ces\emotive-driving\js/component_bundle.js
+============================
+어써페이지 (참고용)
+============================
+emotive-driving.html (2018.12.12 주석표시)
+emotive-driving-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+emotive-driving/js/component_bundle.js (수정-전체)
 
 
+
+============================
 ces_2019_details (html,css,js)
+============================
+component/ces_2019_details/html/ces_2019_details.html (2018.12.12 주석표시)
+component/ces_2019_details/html/ces_2019_details-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+
+component/ces_2019_details/js/ces_2019_details.js (수정-전체)
+component/ces_2019_details/js/ces_2019_details-rtl.js (rtl용 추가파일)
+
+component/ces_2019_details/css/ces_2019_details.css (수정-전체)
+component/ces_2019_details/css/ces_2019_details-rtl.css (rtl용 추가파일)
+
+
+============================
 ces_2019_films (html,css,js)
-ces_2019_media (css만 수정)
+============================
+component/ces_2019_films/html/ces_2019_films.html (2018.12.12 주석표시)
+component/ces_2019_films/html/ces_2019_films-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+
+component/ces_2019_films/js/ces_2019_films.js (수정-전체)
+component/ces_2019_films/js/ces_2019_films-rtl.js (rtl용 추가파일)
+
+component/ces_2019_films/css/ces_2019_films.css (수정-전체)
+component/ces_2019_films/css/ces_2019_films-rtl.css (rtl용 추가파일)
+
+
+============================
 ces_2019_text (html,css)
+============================
+component/ces_2019_text/html/ces_2019_text.html (2018.12.12 주석표시)
+component/ces_2019_text/html/ces_2019_text-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+
+component/ces_2019_text/css/ces_2019_text.css (수정-전체)
+component/ces_2019_text/css/ces_2019_text-rtl.css (rtl용 추가파일)
+
+
+
+
+============================
+ces_2019_media (css만 수정)
+============================
+component/ces_2019_media/html/ces_2019_media-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+component/ces_2019_media/css/ces_2019_media.css (수정-전체)
+
+
+
+==========rtl css만 추가한 컴포넌트 ==================
+ces_2019_space, layout-background,ces_docent (기존 수정내용 없음- rtl용만 추가함 (html,css))
+===================================================
+component/ces_2019_space/html/ces_2019_space-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+component/ces_2019_space/css/ces_2019_space-rtl.css (rtl용 추가파일)
+
+component/layout-background/html/layout-background-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+component/layout-background/css/layout-background-rtl.css (rtl용 추가파일)
+
+
+component/ces_docent/html/ces_docent-rtl.html (AT국가버전 html태그에 dir="rtl" 만 추가)
+component/ces_docent/css/ces_docent-rtl.css (rtl용 추가파일)
+
+
+
