@@ -40,6 +40,30 @@ var cesScrollEffect = function() {
 };
 
 var cesSlideInit = function() {
+  var slideNavSetting = {
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    arrows: false,
+    dots: false,
+    infinite: false,
+    variableWidth: true,
+    rtl: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
+  };
+  var slideLength = $('.slider-nav > div').length;
+
+  if (slideLength < 6) {
+    slideNavSetting.variableWidth = false;
+  }
+
   $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -51,28 +75,12 @@ var cesSlideInit = function() {
 
   $('.slider-nav')
     .on('init', function(event, slick) {
-      var title = $('.slider-nav .slick-slide.slick-current').find('.thumb-title').text(); 
+      var title = $('.slider-nav .slick-slide.slick-current').find('.thumb-title').text();
+
       $('.slider-nav .slick-slide.slick-current').addClass('is-active');
       $('.nav-title').text(title);
     })
-    .slick({
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      arrows: false,
-      dots: false,
-      infinite: false,
-      variableWidth: true,
-      rtl: true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        }
-      ]
-    });
+    .slick(slideNavSetting);
 
   $('.slider-for').on('afterChange', function(event, slick, currentSlide) {
     $('.slider-nav').slick('slickGoTo', currentSlide);
