@@ -192,3 +192,21 @@
     margin-left:15px;
   }
 }
+@media(max-width:660px){
+  .ces_2019_films .films-slide .slider-nav .slick-slide {width: 178px;}
+}
+@media(max-width:600px){
+  .ces_2019_films .films-slide .slider-nav .slick-slide {width: 170px;}
+}
+@media(max-width:560px){
+  .ces_2019_films .films-slide .slider-nav .slick-slide {width: 162px;}
+}
+@media(max-width:530px){
+  .ces_2019_films .films-slide .slider-nav .slick-slide {width: 155px;}
+}
+@media(max-width:510px){
+  .ces_2019_films .films-slide .slider-nav .slick-slide {width: 146px;}
+}
+@media(max-width:320px){
+  .ces_2019_films .films-slide .slider-nav .slick-slide {width: 130px;}
+}
