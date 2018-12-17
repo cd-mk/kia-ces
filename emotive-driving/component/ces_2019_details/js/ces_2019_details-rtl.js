@@ -17,12 +17,7 @@ var cesScrollEffect = function() {
 
 // S : 2018.12.18 leaveScroll 함수 추가
 var leaveScroll = function() {
-  var topArr = [],
-      $target = $('.ces_2019_details');
-
-  for (var i = 0; i < $target.length; i++) {
-    topArr.push($target.eq(i).offset().top);
-  }
+  var $target = $('.ces_2019_details');
 
   $(window).scroll(function() {
     var st = $(this).scrollTop();
