@@ -15,12 +15,6 @@
   bottom: 120px;
   transition: all .5s ease-in-out;
 }
-.ces_2019_text + .ces_2019_media.ces-onScreen {
-  transition-delay: .8s;
-}
-.ces_2019_details + .ces_2019_media.ces-onScreen {
-  transition-delay: .2s;
-}
 .ces_2019_media.ces-onScreen.js-animated {
   bottom: 0;
   opacity: 1;

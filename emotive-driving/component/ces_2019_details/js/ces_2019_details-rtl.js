@@ -7,14 +7,36 @@ var cesScrollEffect = function() {
   });
 
   $('.ces-onScreen').scrollex({
-    bottom: '-5%',
-    mode: 'bottom',
+    // 2018.12.18 bottom 삭제 및 mode 값 middle 로 변경
+    mode: 'middle',
     enter: function() {
       $(this).addClass('js-animated');
     }
   });
 };
 
+// S : 2018.12.18 leaveScroll 함수 추가
+var leaveScroll = function() {
+  var topArr = [],
+      $target = $('.ces_2019_details');
+
+  for (var i = 0; i < $target.length; i++) {
+    topArr.push($target.eq(i).offset().top);
+  }
+
+  $(window).scroll(function() {
+    var st = $(this).scrollTop();
+
+    for (var j = 0; j < $target.length; j++) {
+      if (st > $target.eq(j).offset().top + $target.eq(j).outerHeight()) {
+        $target.eq(j).removeClass('js-animated');
+      } else if (st + $(this).outerHeight() < $target.eq(j).offset().top) {
+        $target.eq(j).removeClass('js-animated');
+      }
+    }
+  });
+};
+// E : 2018.12.18 leaveScroll 함수 추가
 var cesDetailSlide = function() {
   var $target = $('.details-list');
   var slideSetting = {
@@ -47,5 +69,10 @@ $(document).ready(function() {
   }
   if ($('.ces_2019_details').length) {
     cesDetailSlide();
+    // S : 2018.12.18 조건 및 함수 실행 추가
+    if ($(window).width() > $(window).outerHeight()) {
+      leaveScroll();
+    }
+    // E : 2018.12.18 조건 및 함수 실행 추가
   }
 });
