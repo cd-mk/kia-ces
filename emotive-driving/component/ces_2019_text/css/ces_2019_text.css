@@ -24,10 +24,10 @@
   margin-bottom: 0;
   font-size: 22px;
 }
-.ces_2019_text.ces-onScreen .ces_summary {
+.ces_2019_text.ces-onScreen {
   position: relative;
   opacity: 0;
-  bottom: 170px;
+  bottom: 120px;
   transition: all .5s ease-in-out;
 }
 .ces_2019_text .ces_title {
@@ -42,24 +42,14 @@
   display: block;
   letter-spacing: 4px;
 }
-.ces_2019_text.ces-onScreen .ces_title {
-  position: relative;
-  opacity: 0;
-  bottom: 120px;
-  transition: all .5s ease-in-out;
-}
+
 .ces_2019_text .ces_sub-title {
   margin-top: 20px;
   font-family: "kiaB";
   font-size: 24px;
   line-height: 1.2;
 }
-.ces_2019_text.ces-onScreen .ces_sub-title {
-  position: relative;
-  opacity: 0;
-  bottom: 50px;
-  transition: all .5s ease-in-out;
-}
+
 .ces_2019_text .ces_description {
   position: relative;
   margin-top: 20px;
@@ -69,12 +59,6 @@
 }
 .ces_2019_text .ces_description > p {
   margin-top: 35px;
-}
-.ces_2019_text.ces-onScreen .ces_description > p {
-  position: relative;
-  opacity: 0;
-  bottom: 50px;
-  transition: all .5s ease-in-out;
 }
 
 .ces_2019_text .ces_description.line {
@@ -95,10 +79,7 @@
   opacity: 0;
   transition: width .4s ease-in-out;
 }
-.ces_2019_text.js-animated .ces_title,
-.ces_2019_text.js-animated .ces_sub-title,
-.ces_2019_text.js-animated .ces_description > p,
-.ces_2019_text.js-animated .ces_summary {
+.ces_2019_text.js-animated.ces_2019_text{
   bottom: 0;
   opacity: 1;
 }
