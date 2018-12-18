@@ -84,6 +84,6 @@
     background: url(../images/btn-ces-play-mo.png) no-repeat 0 0 /60px auto;/* 2018.12.11 파일명 수정 */
   }
 }
-@media(max-width:320px){
+@media(max-width:360px){
   .ces_2019_media {margin:0 15px;}
 }
