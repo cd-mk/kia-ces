@@ -48,7 +48,6 @@ component/ces_2019_media/js/ces_2019_media.js (2018.12.18 주석표시)
 ============================
 ces_2019_space 
 ============================
-component/ces_2019_space /css/ces_2019_space .css (전체 적용)
 component/ces_2019_space /js/ces_2019_space.js (2018.12.18 주석표시)
 
 

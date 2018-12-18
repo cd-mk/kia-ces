@@ -1,0 +1,94 @@
+10,11c10,11
+<     bottom: '-5%',
+<     mode: 'bottom',
+---
+>     // 2018.12.18 bottom 삭제 및 mode 값 middle 로 변경
+>     mode: 'middle',
+18,33c18,32
+< var cesDetailSlide = function() {
+<   var $target = $('.details-list');
+<   var slideSetting = {
+<       slidesToShow:1,
+<       slidesToScroll: 1,
+<       infinite: true,
+<       arrows: false,
+<       focusOnSelect: true,
+<       variableWidth: true,
+<       centerMode:true,
+<       dots: true
+<     };
+<   $(window).on('load resize', function() {
+<     if ($(window).width() > 768) {
+<       if ($target.hasClass('slick-initialized')) {
+<         $target.slick('unslick');var cesScrollEffect = function() {
+---
+> // S : 2018.12.18 leaveScroll 함수 추가
+> var leaveScroll = function() {
+>   var $target = $('.ces_2019_details');
+> 
+>   $(window).scroll(function() {
+>     var st = $(this).scrollTop();
+> 
+>     for (var j = 0; j < $target.length; j++) {
+>       if (st > $target.eq(j).offset().top + $target.eq(j).outerHeight()) {
+>         $target.eq(j).removeClass('js-animated');
+>       } else if (st + $(this).outerHeight() < $target.eq(j).offset().top) {
+>         $target.eq(j).removeClass('js-animated');
+>       }
+>     }
+>   });var cesScrollEffect = function() {
+42,43c41,42
+<     bottom: '-5%',
+<     mode: 'bottom',
+---
+>     // 2018.12.18 bottom 삭제 및 mode 값 middle 로 변경
+>     mode: 'middle',
+49a49,65
+> // S : 2018.12.18 leaveScroll 함수 추가
+> var leaveScroll = function() {
+>   var $target = $('.ces_2019_details');
+> 
+>   $(window).scroll(function() {
+>     var st = $(this).scrollTop();
+> 
+>     for (var j = 0; j < $target.length; j++) {
+>       if (st > $target.eq(j).offset().top + $target.eq(j).outerHeight()) {
+>         $target.eq(j).removeClass('js-animated');
+>       } else if (st + $(this).outerHeight() < $target.eq(j).offset().top) {
+>         $target.eq(j).removeClass('js-animated');
+>       }
+>     }
+>   });
+> };
+> // E : 2018.12.18 leaveScroll 함수 추가
+81a98,102
+>     // S : 2018.12.18 조건 및 함수 실행 추가
+>     if ($(window).width() > $(window).outerHeight()) {
+>       leaveScroll();
+>     }
+>     // E : 2018.12.18 조건 및 함수 실행 추가
+83a105,122
+> };
+> // E : 2018.12.18 leaveScroll 함수 추가
+> var cesDetailSlide = function() {
+>   var $target = $('.details-list');
+>   var slideSetting = {
+>       slidesToShow:1,
+>       slidesToScroll: 1,
+>       infinite: true,
+>       arrows: false,
+>       focusOnSelect: true,
+>       variableWidth: true,
+>       centerMode:true,
+>       dots: true
+>     };
+>   $(window).on('load resize', function() {
+>     if ($(window).width() > 768) {
+>       if ($target.hasClass('slick-initialized')) {
+>         $target.slick('unslick');
+98a138,142
+>     // S : 2018.12.18 조건 및 함수 실행 추가
+>     if ($(window).width() > $(window).outerHeight()) {
+>       leaveScroll();
+>     }
+>     // E : 2018.12.18 조건 및 함수 실행 추가

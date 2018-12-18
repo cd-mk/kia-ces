@@ -1,0 +1,45 @@
+93,100c93,95
+< 							* 2018.12.12 CES_2019_Details 컴포넌트 변경 사항
+< 							* Mobile에서 슬라이드로 노출되기 위한 마크업 구조 변경
+< 							* details-list(ul) > li 구조를
+< 							* details-list(div) > details-item(div) 구조로 변경
+< 							* 기존 details-item 에만 적용하던 ces-onScreen(모션효과 클래스)를
+< 							* ces_2019_details 에도 추가 적용(Mobile 슬라이드 레이아웃 전체에 모션효과 적용)
+< 							* 신규 추가된 리소스 : slick.css, slick.min.js plugin import
+< 							* 변경된 리소스 : ces_2019_details.css, ces_2019_details.js
+---
+> 							* 2018.12.18 CES_2019_Details 컴포넌트 변경 사항
+> 							* Pc 모션 효과 변경 요청에 따른 수정 사항
+> 							* details-item 에 'ces-onScreen' 클래스 제거
+104c99
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">
+117c112
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">
+130c125
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">
+143c138
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">
+162c157
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">
+175c170
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">
+188c183
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">
+200c195
+< 								<div class="details-item ces-onScreen">
+---
+> 								<div class="details-item">

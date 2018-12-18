@@ -1,0 +1,11 @@
+18,23d17
+< .ces_2019_text + .ces_2019_media.ces-onScreen {
+<   transition-delay: .8s;
+< }
+< .ces_2019_details + .ces_2019_media.ces-onScreen {
+<   transition-delay: .2s;
+< }
+93c87
+< @media(max-width:320px){
+---
+> @media(max-width:360px){

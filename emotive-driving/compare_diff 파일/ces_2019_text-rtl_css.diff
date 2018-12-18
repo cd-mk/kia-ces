@@ -1,0 +1,55 @@
+27c27
+< .ces_2019_text.ces-onScreen .ces_summary {
+---
+> .ces_2019_text.ces-onScreen {
+30c30
+<   bottom: 170px;
+---
+>   bottom: 120px;
+45,57c45
+< .ces_2019_text.ces-onScreen .ces_title {
+<   position: relative;
+<   opacity: 0;
+<   bottom: 120px;
+<   transition: all .5s ease-in-out;
+<   transition-delay: .2s;
+< }
+< .ces_2019_space + .ces_2019_text.ces-onScreen .ces_title {
+<   transition-delay: 0s;
+< }
+< .ces_2019_text.ces-onScreen .ces_summary + .ces_title {
+<   transition-delay: .2s !important;
+< }
+---
+> 
+64,70c52
+< .ces_2019_text.ces-onScreen .ces_sub-title {
+<   position: relative;
+<   opacity: 0;
+<   bottom: 50px;
+<   transition: all .5s ease-in-out;
+<   transition-delay: .4s;
+< }
+---
+> 
+81,87d62
+< .ces_2019_text.ces-onScreen .ces_description > p {
+<   position: relative;
+<   opacity: 0;
+<   bottom: 50px;
+<   transition: all .5s ease-in-out;
+<   transition-delay: .6s;
+< }
+106d80
+<   transition-delay: .5s;
+108,111c82
+< .ces_2019_text.js-animated .ces_title,
+< .ces_2019_text.js-animated .ces_sub-title,
+< .ces_2019_text.js-animated .ces_description > p,
+< .ces_2019_text.js-animated .ces_summary {
+---
+> .ces_2019_text.js-animated.ces_2019_text {
+187,189d157
+<   .ces_2019_text.ces-onScreen .ces_description .animate-line {
+<     transition-delay: .4s;
+<   }

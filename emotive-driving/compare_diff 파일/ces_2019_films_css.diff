@@ -1,0 +1,26 @@
+139d138
+< 
+188c187
+<   .ces_2019_films .films-slide .slider-nav .slick-slide {margin: 0 5px; width: 110px;}
+---
+>   .ces_2019_films .films-slide .slider-nav .slick-slide {margin: 0 5px; width: 190px;}
+195a195,213
+> 
+> @media(max-width:660px){
+>   .ces_2019_films .films-slide .slider-nav .slick-slide {width: 178px;}
+> }
+> @media(max-width:600px){
+>   .ces_2019_films .films-slide .slider-nav .slick-slide {width: 170px;}
+> }
+> @media(max-width:560px){
+>   .ces_2019_films .films-slide .slider-nav .slick-slide {width: 162px;}
+> }
+> @media(max-width:530px){
+>   .ces_2019_films .films-slide .slider-nav .slick-slide {width: 155px;}
+> }
+> @media(max-width:510px){
+>   .ces_2019_films .films-slide .slider-nav .slick-slide {width: 146px;}
+> }
+> @media(max-width:360px){
+>   .ces_2019_films .films-slide .slider-nav .slick-slide {width: 130px;}
+> }
