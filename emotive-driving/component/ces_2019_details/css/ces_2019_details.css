@@ -105,13 +105,14 @@
     padding:0;
     box-sizing: border-box;
   }
-
+ /* S: 2018.12.20 수정 */
   .ces_2019_details.ces-onScreen {
     position: relative;
-    opacity: 0;
-    bottom: 50px;
-    transition: all .5s ease-in-out;
+    opacity:1;
+    bottom: 0;
+    transition:none;
   }
+   /* E: 2018.12.20 수정 */
   .ces_2019_details.ces-onScreen.js-animated {
     opacity: 1;
     bottom: 0;
